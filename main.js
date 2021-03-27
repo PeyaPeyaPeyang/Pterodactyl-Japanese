@@ -3792,7 +3792,7 @@ var json = [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
                 "replace": "Created",
-                "translate": "作成美"
+                "translate": "作成日"
             },
             {
                 "properties": [],
