@@ -7,7 +7,7 @@ Pterodactylを日本語化します。
 ## 使い方
 + [TemperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ja)等のUserScript読み込み拡張をインストールします。
 + main.jsを読み込みます。
-+ [7行目](https://github.com/peyang-Celeron/Pterodactyl-Japanese/blob/main/main.js#L7) の<ADDR HERE> を翻訳したいPterodactylのアドレスにセットします。
++ [7行目](https://github.com/peyang-Celeron/Pterodactyl-Japanese/blob/main/main.js#L7) の\<ADDR HERE\>を翻訳したいPterodactylのアドレスにセットします。
 
 ## テスト済み
-+ Pterodactyl 1.3
++ Pterodactyl 1.2.3
