@@ -857,7 +857,7 @@ var json = [
                     "#app > div > div > section > div > div > div > div > div > input"
                 ],
                 "replace": "Type a command...",
-                "translate": "コマンドを入力..."
+                "translate": "コマンドを入力…"
             },
             {
                 "properties": [],
@@ -2635,7 +2635,7 @@ var json = [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
                 "replace": "Minecraft Version",
-                "translate": "マインクラフトバージョン"
+                "translate": "Minecraftのバージョン"
             },
             {
                 "properties": [],
@@ -2643,7 +2643,7 @@ var json = [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
                 "replace": "The version of minecraft to download.",
-                "translate": "ダウンロードするminecraftのバージョンです。"
+                "translate": "ダウンロードするMinecraftのバージョンです。"
             },
             {
                 "properties": [],
@@ -3566,7 +3566,7 @@ var json = [
         ]
     },
     {
-        "name": "Admin > Settings > API",
+        "name": "Admin > API",
         "path": "^\/admin\/api(\/new)?$",
         "rules": [
             {
@@ -3833,6 +3833,382 @@ var json = [
                 ],
                 "replace": "API Key has been revoked.",
                 "translate": "APIキーは正常に取り消されました。"
+            },
+        ]
+    },
+    {
+        "name": "Admin > Databases",
+        "path": "^\/admin\/databases$",
+        "rules": [
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1"
+                ],
+                "replace": "Database Hosts",
+                "translate": "データベースホスト"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1 > small"
+                ],
+                "replace": "Database hosts that servers can have databases created on.",
+                "translate": "サーバがデータベースを作成する際に使用されるデータベースホストです。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > h3"
+                ],
+                "replace": "Host List",
+                "translate": "ホスト"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > button"
+                ],
+                "replace": "Create New",
+                "translate": "新しく作成"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > h4"
+                ],
+                "replace": "Create New Database Host",
+                "translate": "データベースホストを作成"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > div > p"
+                ],
+                "replace": "A short identifier used to distinguish this location from others. Must be between 1 and 60 characters, for example, ",
+                "translate": "この場所を他の場所と区別するために使用される短い識別子です。1〜60文字である必要があります。例："
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > div > div > p"
+                ],
+                "replace": "The IP address or FQDN that should be used when attempting to connect to this MySQL host <em>from the panel</em> to add new databases.",
+                "translate": "<em>パネル</em>からこのMySQLホストに接続して新しいデータベースを追加するときに使用する必要があるIPアドレスまたはFQDNです。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > div > div > p"
+                ],
+                "replace": "The port that MySQL is running on for this host.",
+                "translate": "このホストでMySQLが実行されているポートです。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > div > div > p"
+                ],
+                "replace": "The username of an account that has enough permissions to create new users and databases on the system.",
+                "translate": "システム上に新しいユーザとデータベースを作成するのに十分な権限を持つアカウントのユーザー名です。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > div > div > label"
+                ],
+                "replace": "Password",
+                "translate": "パスワード"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > div > div > p"
+                ],
+                "replace": "The password to the account defined.",
+                "translate": "アカウントのパスワードです。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > div > label"
+                ],
+                "replace": "Linked Node",
+                "translate": "リンクされたノード"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#select2-pNodeId-container"
+                ],
+                "replace": "None",
+                "translate": "なし"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > div > p"
+                ],
+                "replace": "This setting does nothing other than default to this database host when adding a database to a server on the selected node.",
+                "translate": "この設定は、選択したノード上のサーバにデータベースを追加するときに、このデータベースホストにデフォルトで適用される以外に何もしません。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > p"
+                ],
+                "replace": "The account defined for this database host <strong>must</strong> have the <code>WITH GRANT OPTION</code> permission. If the defined account does not have this permission requests to create databases <em>will</em> fail. <strong>Do not use the same account details for MySQL that you have defined for this panel.</strong>",
+                "translate": "使用するアカウントには、<code>WITH GRANT OPTION</code>権限が<strong>必ず</strong>必要です。使用するアカウントにこの権限がないあ場合、データベースを作成する要求は失敗します。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > p > strong"
+                ],
+                "replace": "Do not use the same account details for MySQL that you have defined for this panel.",
+                "translate": "このパネルに定義したものと同じMySQLのアカウント情報を使用しないでください。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > button"
+                ],
+                "replace": "Cancel",
+                "translate": "キャンセル"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newHostModal > div > div > form > div > button"
+                ],
+                "replace": "Create",
+                "translate": "作成"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th",
+                    "#newHostModal > div > div > form > div > div > label"
+                ],
+                "replace": "Name",
+                "translate": "名前"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th",
+                    "#newHostModal > div > div > form > div > div > div > label"
+                ],
+                "replace": "Host",
+                "translate": "ホスト"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th",
+                    "#newHostModal > div > div > form > div > div > div > label"
+                ],
+                "replace": "Port",
+                "translate": "ポート"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th",
+                    "#newHostModal > div > div > form > div > div > div > label"
+                ],
+                "replace": "Username",
+                "translate": "ユーザ名"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Databases",
+                "translate": "データベース"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Node",
+                "translate": "ノード"
+            },
+        ]
+    },
+    {
+        "name": "Admin > Locations",
+        "path": "^\/admin\/locations$",
+        "rules": [
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1"
+                ],
+                "replace": "Locations",
+                "translate": "場所"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1 > small"
+                ],
+                "replace": "All locations that nodes can be assigned to for easier categorization.",
+                "translate": "ノードを割り当てることができる場所です。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > h3"
+                ],
+                "replace": "Location List",
+                "translate": "場所"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > button"
+                ],
+                "replace": "Create New",
+                "translate": "新しく作成"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newLocationModal > div > div > form > div > h4"
+                ],
+                "replace": "Create Location",
+                "translate": "新しく作成"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newLocationModal > div > div > form > div > div > div > p"
+                ],
+                "replace": "A short identifier used to distinguish this location from others. Must be between 1 and 60 characters, for example, ",
+                "translate": "この場所を他の場所と区別するために使用する短い識別子です。1〜60文字である必要があります。例："
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newLocationModal > div > div > form > div > div > div > p"
+                ],
+                "replace": "A longer description of this location. Must be less than 191 characters.",
+                "translate": "この場所の詳細な説明です。 191文字未満である必要があります。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newLocationModal > div > div > form > div > button"
+                ],
+                "replace": "Cancel",
+                "translate": "キャンセル"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#newLocationModal > div > div > form > div > button"
+                ],
+                "replace": "Create",
+                "translate": "作成"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th",
+                    "#newLocationModal > div > div > form > div > div > div > label"
+                ],
+                "replace": "Short Code",
+                "translate": "短縮コ－ド"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th",
+                    "#newLocationModal > div > div > form > div > div > div > label"
+                ],
+                "replace": "Description",
+                "translate": "概要"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Nodes",
+                "translate": "ノード"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Servers",
+                "translate": "サーバ"
+            },
+        ]
+    },
+    {
+        "name": "Admin > Locations > View",
+        "path": "^\/admin\/locations\/view\/[0-9]+$",
+        "rules": [
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > h3"
+                ],
+                "replace": "Location Details",
+                "translate": "場所情報"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > form > div > div > label"
+                ],
+                "replace": "Short Code",
+                "translate": "短縮コード"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > form > div > div > label"
+                ],
+                "replace": "Description",
+                "translate": "概要"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > form > div > button"
+                ],
+                "replace": "Save",
+                "translate": "保存"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > h3"
+                ],
+                "replace": "Nodes",
+                "translate": "ノード"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Name",
+                "translate": "名前"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Servers",
+                "translate": "サーバ数"
             },
         ]
     }
