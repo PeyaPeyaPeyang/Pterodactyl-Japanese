@@ -4211,6 +4211,396 @@ var json = [
                 "translate": "サーバ数"
             },
         ]
+    },
+    {
+        "name": "Admin > Node",
+        "path": "^\/admin\/nodes(\\?filter.*)?$",
+        "rules": [
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1"
+                ],
+                "replace": "Nodes",
+                "translate": "ノード"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1 > small"
+                ],
+                "replace": "All nodes available on the system.",
+                "translate": "システムで使用可能なすべてのノードです。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > h3"
+                ],
+                "replace": "Node List",
+                "translate": "ノード"
+            },
+            {
+                "properties": [
+                    "placeholder"
+                ],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > form > div > input"
+                ],
+                "replace": "Search Node",
+                "translate": "ノードを検索"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Name",
+                "translate": "名前"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Location",
+                "translate": "場所"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Memory",
+                "translate": "メモリ"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Disk",
+                "translate": "ディスク"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Servers",
+                "translate": "サーバ数"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > table > tbody > tr > th"
+                ],
+                "replace": "Public",
+                "translate": "公開"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > form > div > div > a > button"
+                ],
+                "replace": "Create New",
+                "translate": "新しく作成"
+            },
+        ]
+    },
+    {
+        "name": "Admin > Node > New",
+        "path": "^\/admin\/nodes\/new$",
+        "rules": [
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1"
+                ],
+                "replace": "New Node",
+                "translate": "新しいノード"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1 > small"
+                ],
+                "replace": "Create a new local or remote node for servers to be installed to.",
+                "translate": "インストール先のサーバ用に新しいローカルノードまたはリモートノードを作成します。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > h3"
+                ],
+                "replace": "Basic Details",
+                "translate": "基本"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Name",
+                "translate": "名前"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > p"
+                ],
+                "replace": "Character limits: <code>a-zA-Z0-9_.-</code> and <code>[Space]</code> (min 1, max 100 characters).",
+                "translate": "使用可能な文字は<code>a-zA-Z0-9_.-</code>と空白文字で、100文字以内である必要があります。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Description",
+                "translate": "概要"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Location",
+                "translate": "場所"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#select2-pLocationId-results > li"
+                ],
+                "replace": "No results found",
+                "translate": "場所が見つかりませんでした"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Node Visibility",
+                "translate": "ノードの可視性"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > div > label"
+                ],
+                "replace": "Public",
+                "translate": "公開"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > div > label"
+                ],
+                "replace": "Private",
+                "translate": "非公開"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section.content > form > div > div:nth-child(1) > div > div.box-body > div:nth-child(4) > p"
+                ],
+                "replace": "By setting a node to <code>private</code> you will be denying the ability to auto-deploy to this node.",
+                "translate": "<code>非公開</code>に設定した場合、ノードに自動でデプロイする機能を利用できません。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > p"
+                ],
+                "replace": "Please enter domain name (e.g <code>node.example.com</code>) to be used for connecting to the daemon. An IP address may be used <em>only</em> if you are not using SSL for this node.",
+                "translate": "ドメイン名を入力してください(例：<code>node.example.com</code>)。IPアドレスは、このノードにSSLを使用していない場合にのみ使用できます。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Communicate Over SSL",
+                "translate": "SSLの使用"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > div > label"
+                ],
+                "replace": "Use SSL Connection",
+                "translate": "SSL接続を使用"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > div > label"
+                ],
+                "replace": "Use HTTP Connection",
+                "translate": "HTTP接続を使用"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > p"
+                ],
+                "replace": "Your Panel is currently configured to use a secure connection. In order for browsers to connect to your node it <strong>must</strong> use a SSL connection.",
+                "translate": "パネルは現在、安全な接続を使用するように構成されています。ブラウザがノードに接続するには、SSL接続を使用する必要があります。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Behind Proxy",
+                "translate": "中間プロキシ(<font>Behind</font> Proxy)"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > div > label"
+                ],
+                "replace": "Not Behind Proxy",
+                "translate": "使用していない"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > div > label"
+                ],
+                "replace": "Behind Proxy",
+                "translate": "使用している"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > p"
+                ],
+                "replace": "If you are running the daemon behind a proxy such as Cloudflare, select this to have the daemon skip looking for certificates on boot.",
+                "translate": "Cloudflareなどのプロキシの背後でデーモンを実行している場合は、これを選択して、デーモンが起動時に証明書の検索をスキップするようにします。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > h3"
+                ],
+                "replace": "Configuration",
+                "translate": "設定"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > label"
+                ],
+                "replace": "Daemon Server File Directory",
+                "translate": "デーモンサーバファイルディレクトリ"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > p"
+                ],
+                "replace": "Enter the directory where server files should be stored. <strong>If you use OVH you should check your partition scheme. You may need to use <code>/home/daemon-data</code> to have enough space.</strong>",
+                "translate": "サーバファイルを保存するディレクトリを指定します。<strong>OVHを使用している場合はパーティションスキームを確認する必要があります。十分なスペースを確保するには、<code>/home/daemon-data</code>を指定してください。</strong>"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > label"
+                ],
+                "replace": "Total Memory",
+                "translate": "トータルメモリ"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > label"
+                ],
+                "replace": "Memory Over-Allocation",
+                "translate": "メモリの過剰割り当て"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > p"
+                ],
+                "replace": "Enter the total amount of memory available for new servers. If you would like to allow overallocation of memory enter the percentage that you want to allow. To disable checking for overallocation enter <code>-1</code> into the field. Entering <code>0</code> will prevent creating new servers if it would put the node over the limit.",
+                "translate": "新しいサーバで使用可能なメモリの合計量を入力します。メモリの過剰割り当てを許可する場合は、許可するパーセンテージを入力します。割り当て超過のチェックを無効にするには、フィールドに<code>-1</code>と入力します。<code>0</code>を入力すると、ノードが制限を超えた場合に新しいサーバを作成できなくなります。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > label"
+                ],
+                "replace": "Total Disk Space",
+                "translate": "最大ディスクサイズ"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > label"
+                ],
+                "replace": "Disk Over-Allocation",
+                "translate": "ディスクの過剰割り当て"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > p"
+                ],
+                "replace": "Enter the total amount of disk space available for new servers. If you would like to allow overallocation of disk space enter the percentage that you want to allow. To disable checking for overallocation enter <code>-1</code> into the field. Entering <code>0</code> will prevent creating new servers if it would put the node over the limit.",
+                "translate": "新しいサーバで使用可能なディスクの合計量を入力します。ディスクの過剰割り当てを許可する場合は、許可するパーセンテージを入力します。割り当て超過のチェックを無効にするには、フィールドに<code>-1</code>と入力します。<code>0</code>を入力すると、ノードが制限を超えた場合に新しいサーバを作成できなくなります。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > label"
+                ],
+                "replace": "Daemon Port",
+                "translate": "デーモンポート"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > label"
+                ],
+                "replace": "Daemon SFTP Port",
+                "translate": "デーモンSFTPポート"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > p"
+                ],
+                "replace": "The daemon runs its own SFTP management container and does not use the SSHd process on the main physical server. ",
+                "translate": "デーモンは独自のSFTP管理コンテナを実行し、メインの物理サーバでSSHdプロセスを使用しません。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > p > strong"
+                ],
+                "replace": "Do not use the same port that you have assigned for your physical server's SSH process.",
+                "translate": "物理サーバのSSHプロセスに割り当てたものと同じポートを使用しないでください。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > p"
+                ],
+                "replace": "If you will be running the daemon behind CloudFlare® you should set the daemon port to <code>8443</code> to allow websocket proxying over SSL.",
+                "translate": "CloudFlare®の背後でデーモンを実行する場合は、デーモンポートを<code>8443</code>に設定して、SSLを介したWebSocketプロキシを許可する必要があります。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > button"
+                ],
+                "replace": "Create Node",
+                "translate": "ノードを作成"
+            },
+        ]
     }
 ];
 
