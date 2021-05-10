@@ -109,7 +109,7 @@ var json = [
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > form > div > button > span"
                 ],
-                "replace": "Save",
+                "equals": "Save",
                 "replace": "Save",
                 "translate": "保存"
             },
@@ -887,7 +887,7 @@ var json = [
     },
     {
         "name": "Server > File Manager",
-        "path": "^\/server\/[a-z0-9]+\/files(\/new|\/edit(#.*)?|#.*)?$",
+        "path": "^\/server\/[a-z0-9]+\/files#?([^(/new)(/edit)])*$",
         "rules": [
             {
                 "properties": [],
@@ -1420,7 +1420,13 @@ var json = [
                 ],
                 "replace": "File Mode",
                 "translate": "権限"
-            },
+            }
+        ]
+    },
+    {
+        "name": "Server > File Manager > Editor",
+        "path": "^\/server\/[a-z0-9]+\/files(\/new|\/edit(#.*)?|#.*)?$",
+        "rules": [
             {
                 "properties": [],
                 "selectors": [
@@ -1428,6 +1434,14 @@ var json = [
                 ],
                 "replace": "Save Content",
                 "translate": "内容を保存"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > button > span"
+                ],
+                "replace": "Create File",
+                "translate": "ファイルを作成"
             },
         ]
     },
@@ -3560,6 +3574,7 @@ var json = [
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > button"
                 ],
+                "equals": "Save",
                 "replace": "Save",
                 "translate": "保存"
             },
@@ -4599,6 +4614,229 @@ var json = [
                 ],
                 "replace": "Create Node",
                 "translate": "ノードを作成"
+            },
+        ]
+    },
+    {
+        "name": "Admin > Node > View > Header",
+        "path": "^\/admin\/nodes\/view\/\\d+",
+        "rules": [
+            {
+                "properties": [],
+                "selectors": [
+                    "title",
+                    "body > div > div > section > div > div > div > ul > li > a"
+                ],
+                "replace": "About",
+                "translate": "概要"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "title",
+                    "body > div > div > section > div > div > div > ul > li > a"
+                ],
+                "replace": "Settings",
+                "translate": "設定"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "title",
+                    "body > div > div > section > div > div > div > ul > li > a"
+                ],
+                "replace": "Configuration",
+                "translate": "構成"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "title",
+                    "body > div > div > section > div > div > div > ul > li > a"
+                ],
+                "replace": "Allocation",
+                "translate": "割り当て"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "title",
+                    "body > div > div > section > div > div > div > ul > li > a"
+                ],
+                "replace": "Servers",
+                "translate": "サーバ"
+            },
+        ]
+    },
+    {
+        "name": "Admin > Node > View",
+        "path": "^\/admin\/nodes\/view\/\\d+$",
+        "rules": [
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1 > small"
+                ],
+                "replace": "A quick overview of your node.",
+                "translate": "ノードの要約ビューです。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > h3"
+                ],
+                "replace": "Information",
+                "translate": "情報"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > table > tbody > tr > td"
+                ],
+                "replace": "Daemon Version",
+                "translate": "デーモンバージョン"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > table > tbody > tr > td"
+                ],
+                "replace": "System Information",
+                "translate": "システム情報"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > table > tbody > tr > td"
+                ],
+                "replace": "Total CPU Threads",
+                "translate": "CPUスレッド数"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div"
+                ],
+                "replace": "Description",
+                "translate": "概要"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > h3"
+                ],
+                "replace": "Delete Node",
+                "translate": "ノードを削除"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > p"
+                ],
+                "replace": "Deleting a node is a irreversible action and will immediately remove this node from the panel. There must be no servers associated with this node in order to continue.",
+                "translate": "ノードの削除は元に戻せないアクションであり、このノードをパネルからすぐに削除します。 続行するには、このノードにサーバーが関連付けられていない必要があります。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > form > button"
+                ],
+                "replace": "Yes, Delete This Node",
+                "translate": "このノードを削除する"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > h3"
+                ],
+                "replace": "At-a-Glance",
+                "translate": "要約"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > div > div > span"
+                ],
+                "replace": "Disk Space Allocated",
+                "translate": "割り当て済みディスク"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > div > div > span"
+                ],
+                "replace": "Memory Allocated",
+                "translate": "割り当て済みメモリ"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > div > div > div > div > div > div > div > div > span"
+                ],
+                "replace": "Total Servers",
+                "translate": "サーバ数"
+            },
+        ]
+    },
+    {
+        "name": "Admin > Node > View > Settings",
+        "path": "^\/admin\/nodes\/view\/\\d+\/settings$",
+        "rules": [
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > h1 > small"
+                ],
+                "replace": "Configure your node settings.",
+                "translate": "あなたのノード設定を構成。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > h3"
+                ],
+                "replace": "Settings",
+                "translate": "設定"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Node Name",
+                "translate": "ノード名"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > div > p > small"
+                ],
+                "replace": "Character limits: <code>a-zA-Z0-9_.-</code> and <code>[Space]</code> (min 1, max 100 characters).",
+                "translate": "使用可能な文字は<code>a-zA-Z0-9_.-</code>と空白文字で、100文字以内である必要があります。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Description",
+                "translate": "説明"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "body > div > div > section > form > div > div > div > div > div > label"
+                ],
+                "replace": "Location",
+                "translate": "場所"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#select2-location_id-ai-results > li"
+                ],
+                "replace": "No results found",
+                "translate": "場所が見つかりませんでした"
             },
         ]
     }
