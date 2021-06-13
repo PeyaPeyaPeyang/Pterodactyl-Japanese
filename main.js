@@ -1056,7 +1056,7 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#modal-portal > div > div > div > div > p"
+                    "#modal-portal > div > div > div > div > div"
                 ],
                 "replace": "Deleting files is a permanent operation, you cannot undo this action.",
                 "translate": "ファイルの削除は永続的な操作であり、この操作を元に戻すことはできません。"
@@ -5045,5 +5045,3 @@ function tr(dom, translate, prop, replace, format, contains, append, ignoreCase,
                       dom.outerHTML = inn;
               }
 }
-
-
