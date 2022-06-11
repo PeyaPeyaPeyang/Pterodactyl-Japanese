@@ -773,6 +773,14 @@ var json = [
             },
             {
                 "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > p"
+                ],
+                "replace": "An error was encountered by the application while rendering this view. Try refreshing the page.",
+                "translate": "このページをレンダリングする際にエラーが発生しました。ページをリフレッシュしてみてください。"
+            },
+            {
+                "properties": [],
                 "replace": "File Manager",
                 "translate": "ファイル管理"
             },
@@ -2622,6 +2630,14 @@ var json = [
                 ],
                 "replace": "Primary",
                 "translate": "主要"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > button > span"
+                ],
+                "replace": "Make Primary",
+                "translate": "主要にする"
             },
             {
                 "properties": [],
