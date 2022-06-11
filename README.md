@@ -10,4 +10,4 @@ Pterodactylを日本語化します。
 + [7行目](https://github.com/peyang-Celeron/Pterodactyl-Japanese/blob/main/main.js#L7) の\<ADDR HERE\>を翻訳したいPterodactylのアドレスにセットします。
 
 ## テスト済み
-+ Pterodactyl 1.2.3
++ Pterodactyl Panel 1.7.0

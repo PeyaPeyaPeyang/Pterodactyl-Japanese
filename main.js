@@ -415,7 +415,7 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#app > div > div > section > div > div > div > div > form > label",
+                    "#app > div > div > section > div > div > div > div > form > div > label",
                     "#modal-portal > div > div > div > div > form > label"
                 ],
                 "replace": "Current Password",
@@ -424,7 +424,7 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#app > div > div > section > div > div > div > div > form > div > label"
+                    "#app > div > div > section > div > div > div > div > form > div > div > label"
                 ],
                 "replace": "Confirm New Password",
                 "translate": "新しいパスワードの確認"
@@ -432,10 +432,18 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#app > div > div > section > div > div > div > div > form > div > label"
+                    "#app > div > div > section > div > div > div > div > form > div > div > label"
                 ],
                 "replace": "New Password",
                 "translate": "新しいパスワード"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > form > div > div > p"
+                ],
+                "replace": "Password must be at least 8 characters",
+                "translate": "パスワードは8文字以上でなければなりません。"
             },
             {
                 "properties": [],
@@ -475,12 +483,12 @@ var json = [
                     "#app > div > div > section > div > div > div > h2"
                 ],
                 "replace": "Update Email Address",
-                "translate": "パスワードを更新"
+                "translate": "メールアドレスを更新"
             },
             {
                 "properties": [],
                 "selectors": [
-                    "#app > div > div > section > div > div > div > div > form > label"
+                    "#app > div > div > section > div > div > div > div > form > div > label"
                 ],
                 "replace": "Email",
                 "translate": "メールアドレス"
@@ -496,7 +504,15 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#app > div > div > section > div > div > div > div > form > div > label"
+                    "#app > div > div > section > div > div > div > div > div > span"
+                ],
+                "replace": "Your primary email has been updated.",
+                "translate": "あなたのメールアドレスが更新されました。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > form > div > div > label"
                 ],
                 "replace": "Confirm Password",
                 "translate": "パスワードを確認"
@@ -509,7 +525,6 @@ var json = [
                 "replace": "You must provide your current account password.",
                 "translate": "現在のアカウントのパスワードを入力する必要があります。"
             },
-
             {
                 "properties": [],
                 "selectors": [
@@ -743,7 +758,7 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#modal-portal > div > div > div > div > p"
+                    "#modal-portal > div > div > div > div > div"
                 ],
                 "replace": "Are you sure you wish to delete this API key? All requests using it will immediately be invalidated and will fail.",
                 "translate": "本当にこのAPIキーを削除しますか？これを使用している全てのリクエストは無効になり、失敗するようになります。"
@@ -1306,7 +1321,7 @@ var json = [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
                 ],
-                "replace": "July ",
+                "replace": "Jul ",
                 "translate": "7月"
             },
             {
@@ -1324,7 +1339,7 @@ var json = [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
                 ],
-                "replace": "Sept ",
+                "replace": "Sep ",
                 "translate": "9月"
             },
             {
@@ -1536,7 +1551,7 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#modal-portal > div > div > div > div > h3"
+                    "#modal-portal > div > div > div > div > form > h3"
                 ],
                 "replace": "Create new schedule",
                 "translate": "新しいスケジュールを作成"
@@ -1544,7 +1559,7 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#modal-portal > div > div > div > div > form > label"
+                    "#modal-portal > div > div > div > div > form > div > label"
                 ],
                 "replace": "Schedule name",
                 "translate": "スケジュール名"
@@ -1552,10 +1567,10 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#modal-portal > div > div > div > div > form > p.input-help"
+                    "#modal-portal > div > div > div > div > form > div > p.input-help"
                 ],
                 "replace": "A human readable identifer for this schedule",
-                "translate": "人間が理解できるスケジュールの名前"
+                "translate": "人間が理解できるようなスケジュールの名前"
             },
             {
                 "properties": [],
@@ -1600,6 +1615,38 @@ var json = [
                 ],
                 "replace": "The schedule system supports the use of Cronjob syntax when defining when tasks should begin running. Use the fields above to specify when these tasks should begin running.",
                 "translate": "スケジュールシステムは、タスクの実行を開始するタイミングを定義するときに、Cronjob構文の使用をサポートします。上記のフィールドを使用して、これらのタスクの実行を開始するタイミングを指定します。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > label"
+                ],
+                "replace": "Only When Server Is Online",
+                "translate": "サーバがオンラインのときのみ"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > p"
+                ],
+                "replace": "Only execute this schedule when the server is in a running state.",
+                "translate": "サーバが実行中のときにのみ、このスケジュールを実行します。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > label"
+                ],
+                "replace": "Schedule Enabled",
+                "translate": "スケジュールを有効化"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > p"
+                ],
+                "replace": "This schedule will be executed automatically if enabled.",
+                "translate":"このスケジュールは有効になったときに自動的に実行されます。"
             },
             {
                 "properties": [],
@@ -1961,7 +2008,7 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#modal-portal > div > div > div > div > form > div > label"
+                    "#modal-portal > div > div > div > div > form > div > div > label"
                 ],
                 "replace": "User Email",
                 "translate": "ユーザのメールアドレス"
@@ -1969,7 +2016,7 @@ var json = [
             {
                 "properties": [],
                 "selectors": [
-                    "#modal-portal > div > div > div > div > form > div > p"
+                    "#modal-portal > div > div > div > div > form > div > div > p"
                 ],
                 "replace": "Enter the email address of the user you wish to invite as a subuser for this server.",
                 "translate": "このサーバのサブユーザとして追加するサブユーザのメールアドレスです。"
@@ -2302,8 +2349,25 @@ var json = [
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
-                "replace": "Allows a user to download backups.",
-                "translate": "ユーザがバックアップをダウンロードできるようにします。"
+                "replace": "Allows a user to download a backup for the server. Danger: this allows a user to access all files for the server in the backup.",
+                "translate": "ユーザがサーバのバックアップをダウンロードできるようにします。危険：これにより、ユーザはバックアップ内のサーバのすべてのファイルにアクセスすることができます。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
+                ],
+                "equals": "restore",
+                "replace": "restore",
+                "translate": "復元"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
+                ],
+                "replace": "Allows a user to restore a backup for the server. Danger: this allows the user to delete all of the server files in the process.",
+                "translate": "ユーザがサーバのバックアップを復元できるようにします。危険：これにより、ユーザはサーバのすべてのファイルを削除することができます。"
             },
             {
                 "properties": [],
@@ -2486,6 +2550,14 @@ var json = [
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
+                "replace": "view_password",
+                "translate": "パスワードの閲覧(view<span>_</span>password)"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
+                ],
                 "replace": "Allows a user to view the password associated with a database instance for this server.",
                 "translate": "ユーザがこのサーバのデータベースに関連付けられたパスワードを表示できるようにします。"
             },
@@ -2558,6 +2630,15 @@ var json = [
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
+                "equals": "rename",
+                "replace": "rename",
+                "translate": "名前の変更"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
+                ],
                 "replace": "Allows a user to rename this server.",
                 "translate": "ユーザがこのサーバの名前を変更できるようにします。"
             },
@@ -2566,8 +2647,17 @@ var json = [
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
+                "equals": "reinstall",
+                "replace": "reinstall",
+                "translate": "再インストール"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
+                ],
                 "replace": "Allows a user to trigger a reinstall of this server.",
-                "translate": "ユーザがこのサーバの再インストールをトリガーできるようにします。"
+                "translate": "ユーザがこのサーバの再インストールを行えるようにします。"
             },
         ]
     },
@@ -2700,6 +2790,14 @@ var json = [
                 "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
+                ],
+                "replace": "This server's Docker image has been manually set by an administrator and cannot be changed through this UI.",
+                "translate": "このサーバのDockerイメージは管理者によって手動で設定されているため、このUIで変更できません。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > h3"
                 ],
                 "replace": "Variables",
                 "translate": "変数"
