@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-var json = [
+const JSON = [
     {
         "name": "General Button",
         "path": "^\/.*",
@@ -5012,7 +5012,7 @@ var json = [
 (function(){
     if (!String.prototype.format) {
         String.prototype.format = function () {
-            var args = arguments;
+            let args = arguments;
             return this.replace(/{(\d+)}/g, function (match, number) {
                 return typeof args[number] != 'undefined'? args[number]: match;
             });
@@ -5020,47 +5020,47 @@ var json = [
     }
 })();
 
-var enable = true;
+let enable = true;
 
 function main(domr) {
     if (!enable)
         return;
-    json.forEach((rules) => {
+    JSON.forEach((rules) => {
         if (!window.location.pathname.match(new RegExp(rules.path)))
             return;
 
         rules.rules.forEach((obj) => {
-            var props = obj.properties;
-            var translate = obj.translate;
-            var format = obj.format;
-            var contains = obj.contains;
-            var append = obj.append;
-            var ignoreCase = obj.ignoreCase ? true: false;
-            var override = obj.override;
-            var add = obj.addClasses;
-            var equals = obj.equals == undefined || obj.equals == null ? rules.equals: obj.equals;
-            var doms;
-            if (!override && rules.selector != undefined && rules.selector != null)
+            const props = obj.properties;
+            const translate = obj.translate;
+            const format = obj.format;
+            const contains = obj.contains;
+            const append = obj.append;
+            const ignoreCase = obj.ignoreCase;
+            const override = obj.override;
+            const add = obj.addClasses;
+            const equals = obj.equals === undefined || obj.equals == null ? rules.equals: obj.equals;
+            let doms;
+            if (!override && rules.selector !== undefined && rules.selector != null)
                 doms = [document.querySelectorAll(rules.selector)];
-            else if (!override && rules.selectors != undefined && rules.selectors != null)
+            else if (!override && rules.selectors !== undefined && rules.selectors != null)
                 doms = rules.selectors.map(s => document.querySelectorAll(s));
             else
                 doms = obj.selectors.map(s => document.querySelectorAll(s));
 
-            for (var i = 0; i < doms.length; i++)
+            for (let i = 0; i < doms.length; i++)
             {
-                var domc = doms[i]
+                let domc = doms[i]
                 domc.forEach((dom) => {
-                    if (domr != undefined && domr != null && dom != null && !dom == domr)
+                    if (domr !== undefined && dom != null && !dom === domr)
                         return;
                     props.forEach((prop) => {
                         tr(dom, translate, prop, obj["replace"], format, contains, append, ignoreCase, add, equals);
                     });
-                    if (props.length == 0 && format != undefined)
+                    if (props.length === 0 && format !== undefined)
                         tr(dom, translate, null, obj["replace"], format, contains, append, ignoreCase, add, equals);
-                    else if (props.length == 0 && obj["replace"] == undefined)
-                         tr(dom, translate, null, null, format, contains, append, ignoreCase, add)
-                    else if (obj["replace"] != undefined)
+                    else if (props.length === 0 && obj["replace"] === undefined)
+                        tr(dom, translate, null, null, format, contains, append, ignoreCase, add)
+                    else if (obj["replace"] !== undefined)
                         tr(dom, translate, null, obj["replace"], format, contains, append, ignoreCase, add, equals);
                 });
 
@@ -5070,7 +5070,7 @@ function main(domr) {
     });
 }
 
-var config = {
+let config = {
     childList: true,
     subtree: true,
     attributeOldValue: false,
@@ -5078,8 +5078,8 @@ var config = {
     characterData: false
 };
 
-var observer = new MutationObserver((r) => {
-    /*var flag = false;
+let observer = new MutationObserver((r) => {
+    /*let flag = false;
     r.forEach((b) => {
         if (b.target)
             if (b.target.className)
@@ -5100,7 +5100,7 @@ var observer = new MutationObserver((r) => {
     main(null);
     observer.observe(document, config);
 });
-    observer.observe(document, config);
+observer.observe(document, config);
 
 document.kill = () => {
     enable = false;
@@ -5115,7 +5115,7 @@ document.update = () => {
     main(null)
 }
 function cca (str, array, ignoreCase) {
-    var a = false;
+    let a = false;
     array.forEach((ab) => {
         if (a)
             return;
@@ -5127,59 +5127,54 @@ function cca (str, array, ignoreCase) {
 }
 
 function equ (str, equ) {
-    var a = false;
-    if (equ == undefined || equ == null)
+    let a = false;
+    if (equ === undefined || equ == null)
         return true;
     return str.toUpperCase() === equ.toUpperCase();
 }
 
-function lower(str, ignoreCase)
-{
-    return ignoreCase ? str.ignoreCase(): str;
-}
-
 function tr(dom, translate, prop, replace, format, contains, append, ignoreCase, add, equals) {
-    if (dom == undefined || dom == null)
+    if (dom === undefined || dom == null)
         return;
 
     if (contains == null || (contains && !prop && cca(dom.innerHTML, contains, ignoreCase)) || (contains && prop && dom[prop] && cca(dom[prop], contains, ignoreCase) && equ(dom[prop], equals)))
-        if (add && add.length != 0)
+        if (add && add.length !== 0)
             add.forEach(s => dom.classList.add(s))
 
-    if (translate != undefined)
+    if (translate !== undefined)
     {
         if (prop != null)
         {
-            if (contains != undefined && contains != null && dom[prop] != null && dom[prop] != undefined && !cca(dom[prop], contains, ignoreCase) && !equ(dom[prop], equals))
+            if (contains !== undefined && dom[prop] != null && dom[prop] !== undefined && !cca(dom[prop], contains, ignoreCase) && !equ(dom[prop], equals))
                 return;
-            if (replace != null && dom[prop] != undefined)
+            if (replace != null && dom[prop] !== undefined)
             {
-                var a = dom[prop].replace(replace, translate) + (append != undefined && append != null ? append: "");
-                if (a != dom[prop])
+                let a = dom[prop].replace(replace, translate) + (append !== undefined && append != null ? append: "");
+                if (a !== dom[prop])
                     dom[prop] = a;
             }
             else
             {
-                var ate = translate + (append != undefined && append != null ? append: "");
-                if (ate != dom[prop])
+                let ate = translate + (append !== undefined && append != null ? append: "");
+                if (ate !== dom[prop])
                     dom[prop] = ate;
             }
         }
         else
         {
-            if (contains != undefined && contains != null && !cca(dom.innerHTML, contains, ignoreCase) || !equ(dom.innerHTML, equals))
+            if (contains !== undefined && !cca(dom.innerHTML, contains, ignoreCase) || !equ(dom.innerHTML, equals))
                 return;
 
             if (replace != null)
             {
-                var kawr = dom.innerHTML.replace(replace, translate) + (append != undefined && append != null ? append: "");
-                if (dom.innerHTML != kawr)
+                let kawr = dom.innerHTML.replace(replace, translate) + (append !== undefined && append != null ? append: "");
+                if (dom.innerHTML !== kawr)
                     dom.innerHTML = kawr
             }
             else
             {
-                var sar = translate + (append != undefined && append != null ? append: "");
-                if ( dom.innerHTML != sar)
+                let sar = translate + (append !== undefined && append != null ? append: "");
+                if ( dom.innerHTML !== sar)
                     dom.innerHTML = sar;
             }
         }
@@ -5190,25 +5185,25 @@ function tr(dom, translate, prop, replace, format, contains, append, ignoreCase,
     if (dom == null)
         return;
 
-    if (format == undefined || format == null)
+    if (format === undefined)
         return;
 
     if (prop != null)
     {
         if (document.querySelector(replace) != null)
-            if (contains != undefined && contains != null && dom[prop] != null && dom[prop] != undefined && cca(dom[prop], contains, ignoreCase) && equ(dom[prop], equals))
+            if (contains !== undefined && dom[prop] != null && dom[prop] !== undefined && cca(dom[prop], contains, ignoreCase) && equ(dom[prop], equals))
             {
-                var propaw = format.format(document.querySelector(replace).outerHTML) + (append != undefined && append != null ? append: "");
-                if (dom[prop] != propaw)
+                let propaw = format.format(document.querySelector(replace).outerHTML) + (append !== undefined && append != null ? append: "");
+                if (dom[prop] !== propaw)
                     dom[prop] = propaw;
             }
     }
     else
-        if (document.querySelector(replace) != null)
-              if (contains != undefined && contains != null && cca(dom.innerHTML, contains, ignoreCase) && equ(dom.innerHTML, equals))
-              {
-                  var inn =  format.format(document.querySelector(replace).outerHTML) + (append != undefined && append != null ? append: "");
-                  if (inn != dom.outerHTML)
-                      dom.outerHTML = inn;
-              }
+    if (document.querySelector(replace) != null)
+        if (contains !== undefined && contains != null && cca(dom.innerHTML, contains, ignoreCase) && equ(dom.innerHTML, equals))
+        {
+            let inn =  format.format(document.querySelector(replace).outerHTML) + (append !== undefined && append != null ? append: "");
+            if (inn !== dom.outerHTML)
+                dom.outerHTML = inn;
+        }
 }
