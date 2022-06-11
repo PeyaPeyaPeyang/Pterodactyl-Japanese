@@ -1289,7 +1289,7 @@ var json = [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
                 ],
-                "replace": "June ",
+                "replace": "Jun ",
                 "translate": "6月"
             },
             {
@@ -1363,6 +1363,51 @@ var json = [
                 ],
                 "replace": "th, ",
                 "translate": "日"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > a > div",
+                    "#app > div > div > section > div > div > div > div > div"
+                ],
+                "replace": "nd, ",
+                "translate": "日"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > a > div",
+                    "#app > div > div > section > div > div > div > div > div"
+                ],
+                "replace": "st, ",
+                "translate": "日"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > a > div",
+                    "#app > div > div > section > div > div > div > div > div"
+                ],
+                "replace": "rd, ",
+                "translate": "日"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > a > div",
+                    "#app > div > div > section > div > div > div > div > div"
+                ],
+                "replace": "AM",
+                "translate": " 午前"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > div > div > a > div",
+                    "#app > div > div > section > div > div > div > div > div"
+                ],
+                "replace": "PM",
+                "translate": " 午後"
             },
             {
                 "properties": [],
@@ -2529,6 +2574,14 @@ var json = [
                 ],
                 "replace": "Backups cannot be created for this server.",
                 "translate": "バックアップはこのサーバでは利用できません。"
+            },
+            {
+                "properties": [],
+                "selectors": [
+                    "#app > div > div > section > div > p"
+                ],
+                "replace": "Backups cannot be created for this server because the backup limit is set to 0.",
+                "translate": "バックアップの上限が 0 に設定されているため, バックアップはこのサーバでは使用できません。"
             },
         ]
     },
