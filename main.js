@@ -15,97 +15,81 @@ const JSON = [
         "selector": "button > span",
         "rules": [
             {
-                "properties": [],
                 "equals": "Login",
                 "replace": "Login",
                 "translate": "ログイン"
             },
             {
-                "properties": [],
                 "equals": "Update Password",
                 "replace": "Update Password",
                 "translate": "パスワードを更新"
             },
             {
-                "properties": [],
                 "equals": "Update Email",
                 "replace": "Update Email",
                 "translate": "メールアドレスを更新"
             },
             {
-                "properties": [],
                 "equals": "Begin Setup",
                 "replace": "Begin Setup",
                 "translate": "設定を開始"
             },
             {
-                "properties": [],
                 "equals": "Disable",
                 "replace": "Disable",
                 "translate": "無効にする"
             },
             {
-                "properties": [],
                 "equals": "Setup",
                 "replace": "Setup",
                 "translate": "セットアップ"
             },
             {
-                "properties": [],
                 "equals": "Close",
                 "replace": "Close",
                 "translate": "閉じる"
             },
             {
-                "properties": [],
                 "equals": "Create",
                 "replace": "Create",
                 "translate": "作成する"
             },
             {
-                "properties": [],
                 "equals": "Close",
                 "replace": "Close",
                 "translate": "閉じる"
             },
             {
-                "properties": [],
                 "equals": "Cancel",
                 "replace": "Cancel",
                 "translate": "キャンセル"
             },
             {
-                "properties": [],
                 "euals": "Move",
                 "replace": "Move",
                 "translate": "移動"
             },
             {
-                "properties": [],
                 "euals": "Update",
                 "replace": "Update",
                 "translate": "更新"
             },
             {
-                "properties": [],
                 "euals": "Edit",
                 "replace": "Edit",
                 "translate": "編集"
             },
             {
-                "properties": [],
                 "equals": "Save changes",
                 "replace": "Save changes",
                 "translate": "変更の保存"
             },
             {
-                "properties": [],
                 "equals": "Save Changes",
                 "replace": "Save Changes",
                 "translate": "変更の保存"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > form > div > button > span"
                 ],
@@ -121,47 +105,38 @@ const JSON = [
         "selector": "div[role=alert] > span:nth-child(2)",
         "rules": [
             {
-                "properties": [],
                 "replace": "We have e-mailed your password reset link!",
                 "translate": "パスワードリセットリンクをメールで送信しました！"
             },
             {
-                "properties": [],
                 "replace": "The password provided was invalid for this account.",
                 "translate": "入力されたパスワードが一致しません。"
             },
             {
-                "properties": [],
                 "replace": "The authentication code must be a number.",
                 "translate": "認証コードは数字である必要があります。"
             },
             {
-                "properties": [],
                 "replace": "The authentication code field is required.",
                 "translate": "認証コードを入力する必要があります。"
             },
             {
-                "properties": [],
                 "replace": "The password provided was not valid.",
                 "translate": "入力されたパスワードが一致しません。"
             },
             {
-                "properties": [],
                 "replace": "Your primary email has been updated.",
                 "translate": "メールアドレスが更新されました。"
             },
             {
-                "properties": [],
                 "replace": "The files.0.to field is required.",
                 "translate": "ファイル名を指定してください。"
             },
             {
-                "properties": [],
                 "replace": "The authentication token provided has expired, please refresh the page and try again.",
                 "translate": "提供された認証トークンの有効期限が切れています。ページを更新して、再試行してください。"
             },
             {
-                "properties": [],
                 "replace": "The files.0.mode must be a number.",
                 "translate": "権限は数字である必要があります。"
             },
@@ -173,12 +148,10 @@ const JSON = [
         "selector": "div[role=alert] > span:nth-child(1)",
         "rules": [
             {
-                "properties": [],
                 "replace": "Success",
                 "translate": "成功"
             },
             {
-                "properties": [],
                 "replace": "Error",
                 "translate": "エラー"
             },
@@ -189,7 +162,6 @@ const JSON = [
         "path": "^\/auth/login",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > h2"
                 ],
@@ -197,7 +169,6 @@ const JSON = [
                 "translate": "ログインして続ける"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > h2"
                 ],
@@ -205,7 +176,6 @@ const JSON = [
                 "translate": "デバイスチェック"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > label"
                 ],
@@ -213,7 +183,6 @@ const JSON = [
                 "translate": "ユーザ名またはメールアドレス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > div > label"
                 ],
@@ -221,7 +190,6 @@ const JSON = [
                 "translate": "パスワード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > div > p"
                 ],
@@ -229,7 +197,6 @@ const JSON = [
                 "translate": "デバイスによって生成された二段階認証コードを入力します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > div > button > span"
                 ],
@@ -237,7 +204,6 @@ const JSON = [
                 "translate": "続ける"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > div > a"
                 ],
@@ -245,7 +211,6 @@ const JSON = [
                 "translate": "パスワードを紛失しましたか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > div > span"
                 ],
@@ -253,7 +218,6 @@ const JSON = [
                 "translate": "デバイスを紛失しましたか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > div > a"
                 ],
@@ -267,7 +231,6 @@ const JSON = [
         "path": "^\/auth/password$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > h2"
                 ],
@@ -275,7 +238,6 @@ const JSON = [
                 "translate": "パスワードを再設定する"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > label"
                 ],
@@ -283,7 +245,6 @@ const JSON = [
                 "translate": "メールアドレス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > p"
                 ],
@@ -291,7 +252,6 @@ const JSON = [
                 "translate": "アカウントのメールアドレスを入力し、パスワードをリセットする手順を受け取ります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > p"
                 ],
@@ -299,7 +259,6 @@ const JSON = [
                 "translate": "続行するには、有効なメールアドレスを入力する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > div > button > span"
                 ],
@@ -307,7 +266,6 @@ const JSON = [
                 "translate": "メールを送信"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > form > div > div > div > a"
                 ],
@@ -321,7 +279,6 @@ const JSON = [
         "path": "^\/(|account.*|server.*)$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > label"
                 ],
@@ -329,7 +286,6 @@ const JSON = [
                 "translate": "検索"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > p"
                 ],
@@ -337,7 +293,6 @@ const JSON = [
                 "translate": "サーバ名、UUID、割り当てを入力して検索"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > p"
                 ],
@@ -351,7 +306,6 @@ const JSON = [
         "path": "^\/$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "title"
                 ],
@@ -359,7 +313,6 @@ const JSON = [
                 "translate": "ダッシュボード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > p"
                 ],
@@ -367,7 +320,6 @@ const JSON = [
                 "translate": "あなたのサーバのみを表示"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > p"
                 ],
@@ -381,7 +333,6 @@ const JSON = [
         "path": "^\/account$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "title"
                 ],
@@ -389,7 +340,6 @@ const JSON = [
                 "translate": "アカウント概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > a"
                 ],
@@ -397,7 +347,6 @@ const JSON = [
                 "translate": "設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > a"
                 ],
@@ -405,7 +354,6 @@ const JSON = [
                 "translate": "API"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
@@ -413,7 +361,6 @@ const JSON = [
                 "translate": "パスワードを更新"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > label",
                     "#modal-portal > div > div > div > div > form > label"
@@ -422,7 +369,6 @@ const JSON = [
                 "translate": "現在のパスワード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > div > label"
                 ],
@@ -430,7 +376,6 @@ const JSON = [
                 "translate": "新しいパスワードの確認"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > div > label"
                 ],
@@ -438,7 +383,6 @@ const JSON = [
                 "translate": "新しいパスワード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > div > p"
                 ],
@@ -446,7 +390,6 @@ const JSON = [
                 "translate": "パスワードは8文字以上でなければなりません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -454,7 +397,6 @@ const JSON = [
                 "translate": "新しいパスワードは、長さが8文字以上で、このWebサイトに固有のものである必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -462,7 +404,6 @@ const JSON = [
                 "translate": "現在のパスワードを入力する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -470,7 +411,6 @@ const JSON = [
                 "translate": "新しいパスワードを入力してください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -478,7 +418,6 @@ const JSON = [
                 "translate": "パスワードの確認が、入力したパスワードと一致していません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
@@ -486,7 +425,6 @@ const JSON = [
                 "translate": "メールアドレスを更新"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > label"
                 ],
@@ -494,7 +432,6 @@ const JSON = [
                 "translate": "メールアドレス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -502,7 +439,6 @@ const JSON = [
                 "translate": "メールアドレスは有効なアドレスである必要があります"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > span"
                 ],
@@ -510,7 +446,6 @@ const JSON = [
                 "translate": "あなたのメールアドレスが更新されました。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > div > label"
                 ],
@@ -518,7 +453,6 @@ const JSON = [
                 "translate": "パスワードを確認"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -526,7 +460,6 @@ const JSON = [
                 "translate": "現在のアカウントのパスワードを入力する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
@@ -534,7 +467,6 @@ const JSON = [
                 "translate": "二段階認証を設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -542,7 +474,6 @@ const JSON = [
                 "translate": "現在、このアカウントで二段階認証を有効にしていません。下のボタンをクリックして、設定を開始してください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -550,7 +481,6 @@ const JSON = [
                 "translate": "二段階認証がこのアカウントでは有効になっています。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -558,7 +488,6 @@ const JSON = [
                 "translate": "続行するには、現在のパスワードを入力する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -566,7 +495,6 @@ const JSON = [
                 "translate": "二段階認証を無効にするには、アカウントのパスワードを入力する必要があります"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > button > span"
                 ],
@@ -574,7 +502,6 @@ const JSON = [
                 "translate": "二段階認証を無効にする"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
@@ -582,7 +509,6 @@ const JSON = [
                 "translate": "二段階認証を設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -590,7 +516,6 @@ const JSON = [
                 "translate": "QRコードをスキャンした後、認証システムからのコードを入力します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -598,7 +523,6 @@ const JSON = [
                 "translate": "続行するには、認証コードを入力する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -606,7 +530,6 @@ const JSON = [
                 "translate": "認証コードは6文字の数字である必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -614,7 +537,6 @@ const JSON = [
                 "translate": "二段階認証が有効化されました"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > p"
                 ],
@@ -622,7 +544,6 @@ const JSON = [
                 "translate": "アカウントで二段階認証が有効になりました。このデバイスにアクセスできなくなった場合は、アカウントにアクセスするために、以下に表示されているコードを使用する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > p"
                 ],
@@ -636,7 +557,6 @@ const JSON = [
         "path": "^\/account/api$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "title"
                 ],
@@ -644,7 +564,6 @@ const JSON = [
                 "translate": "アカウントのAPI"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > a"
                 ],
@@ -652,7 +571,6 @@ const JSON = [
                 "translate": "設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > div > a"
                 ],
@@ -660,7 +578,6 @@ const JSON = [
                 "translate": "API"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
@@ -668,7 +585,6 @@ const JSON = [
                 "translate": "APIキーを作成する"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > label"
                 ],
@@ -676,7 +592,6 @@ const JSON = [
                 "translate": "説明"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > p"
                 ],
@@ -684,7 +599,6 @@ const JSON = [
                 "translate": "このAPIキーの説明。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > p"
                 ],
@@ -692,7 +606,6 @@ const JSON = [
                 "translate": "説明は必ず入力する必要があります"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > p"
                 ],
@@ -700,7 +613,6 @@ const JSON = [
                 "translate": "説明は4文字以上である必要があります"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > label"
                 ],
@@ -708,7 +620,6 @@ const JSON = [
                 "translate": "許可するIPアドレス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > form > div > p"
                 ],
@@ -716,7 +627,6 @@ const JSON = [
                 "translate": "空白にした場合、全てのIPアドレスからこのAPIキーを使用できるようにします。それ以外の場合は、行ごとにIPアドレスを指定します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h3"
                 ],
@@ -724,7 +634,6 @@ const JSON = [
                 "translate": "あなたのAPIキー"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div  div > section > div > div > div > div > p"
                 ],
@@ -732,7 +641,6 @@ const JSON = [
                 "translate": "このアカウントにAPIキーは有りません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > p"
                 ],
@@ -740,7 +648,6 @@ const JSON = [
                 "translate": "リクエストしたAPIキーを以下に表示します。<strong>二度と表示されないため</strong>、必ず安全な場所に保管してください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
@@ -748,7 +655,6 @@ const JSON = [
                 "translate": "作成したAPIキー"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -756,7 +662,6 @@ const JSON = [
                 "translate": "APIキーの削除"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div"
                 ],
@@ -764,7 +669,6 @@ const JSON = [
                 "translate": "本当にこのAPIキーを削除しますか？これを使用している全てのリクエストは無効になり、失敗するようになります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div > button > span"
                 ],
@@ -782,12 +686,10 @@ const JSON = [
         ],
         "rules": [
             {
-                "properties": [],
                 "replace": "Console",
                 "translate": "コンソール"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -795,42 +697,34 @@ const JSON = [
                 "translate": "このページをレンダリングする際にエラーが発生しました。ページをリフレッシュしてみてください。"
             },
             {
-                "properties": [],
                 "replace": "File Manager",
                 "translate": "ファイル管理"
             },
             {
-                "properties": [],
                 "replace": "Databases",
                 "translate": "データベース"
             },
             {
-                "properties": [],
                 "replace": "Schedules",
                 "translate": "スケジュール"
             },
             {
-                "properties": [],
                 "replace": "Users",
                 "translate": "ユーザ"
             },
             {
-                "properties": [],
                 "replace": "Backups",
                 "translate": "バックアップ"
             },
             {
-                "properties": [],
                 "replace": "Network",
                 "translate": "ネットワーク"
             },
             {
-                "properties": [],
                 "replace": "Startup",
                 "translate": "スタートアップ"
             },
             {
-                "properties": [],
                 "replace": "Settings",
                 "translate": "設定"
             }
@@ -841,7 +735,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > button > span"
                 ],
@@ -849,7 +742,6 @@ const JSON = [
                 "translate": "起動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > button > span"
                 ],
@@ -857,7 +749,6 @@ const JSON = [
                 "translate": "再起動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > button > span"
                 ],
@@ -865,7 +756,6 @@ const JSON = [
                 "translate": "停止"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > button > span"
                 ],
@@ -883,7 +773,6 @@ const JSON = [
                 "translate": "コマンドを入力…"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > p"
                 ],
@@ -891,7 +780,6 @@ const JSON = [
                 "translate": "メモリ使用率"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > p"
                 ],
@@ -899,7 +787,6 @@ const JSON = [
                 "translate": "CPU使用率"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > p"
                 ],
@@ -913,7 +800,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/files#?([^(/new)(/edit)])*$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > p"
                 ],
@@ -921,7 +807,6 @@ const JSON = [
                 "translate": "ファイルをドラッグ&ドロップしてアップロードします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > button > span",
                     "#modal-portal > div > div > div > div > form > div > button > span"
@@ -930,7 +815,6 @@ const JSON = [
                 "translate": "ディレクトリを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > label"
                 ],
@@ -938,7 +822,6 @@ const JSON = [
                 "translate": "ディレクトリ名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -946,7 +829,6 @@ const JSON = [
                 "translate": "正しいディレクトリ名を入力する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > button > span"
                 ],
@@ -954,7 +836,6 @@ const JSON = [
                 "translate": "アップロード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > button > span"
                 ],
@@ -962,7 +843,6 @@ const JSON = [
                 "translate": "新しいファイル"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > button > span",
                     "#modal-portal > div > div > div > div > form > div > button > span"
@@ -971,7 +851,6 @@ const JSON = [
                 "translate": "ファイルを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > label"
                 ],
@@ -979,7 +858,6 @@ const JSON = [
                 "translate": "ファイル名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > p"
                 ],
@@ -987,7 +865,6 @@ const JSON = [
                 "translate": "保存するファイルの名前を入力します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -995,7 +872,6 @@ const JSON = [
                 "translate": "ファイル名を入力してください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > button > span",
                     "#app > div > div > section > div > div > div > div > div > div > div > span"
@@ -1004,7 +880,6 @@ const JSON = [
                 "translate": "アーカイブ化"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > button > span",
                     "#app > div > div > section > div > div > div > div > div > div > div > span"
@@ -1013,7 +888,6 @@ const JSON = [
                 "translate": "削除"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > label"
                 ],
@@ -1021,7 +895,6 @@ const JSON = [
                 "translate": "ファイル名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "p.input-help"
                 ],
@@ -1029,7 +902,6 @@ const JSON = [
                 "translate": "現在のディレクトリを基準にして、このファイルまたはフォルダの新しい名前とディレクトリを入力します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > p > strong"
                 ],
@@ -1037,7 +909,6 @@ const JSON = [
                 "translate": "新しい場所"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -1045,7 +916,6 @@ const JSON = [
                 "translate": "本当にこのファイルを削除しますか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -1053,7 +923,6 @@ const JSON = [
                 "translate": "本当にこのファイルを削除しますか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -1061,7 +930,6 @@ const JSON = [
                 "translate": "本当にこのファイルを削除しますか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -1069,7 +937,6 @@ const JSON = [
                 "translate": "本当にこのディレクトリを削除しますか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -1077,7 +944,6 @@ const JSON = [
                 "translate": "本当にこのディレクトリを削除しますか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div"
                 ],
@@ -1085,7 +951,6 @@ const JSON = [
                 "translate": "ファイルの削除は永続的な操作であり、この操作を元に戻すことはできません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div > button > span"
                 ],
@@ -1093,7 +958,6 @@ const JSON = [
                 "translate": "削除する"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div > button > span"
                 ],
@@ -1101,7 +965,6 @@ const JSON = [
                 "translate": "削除する"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div > button > span"
                 ],
@@ -1109,7 +972,6 @@ const JSON = [
                 "translate": "削除する"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1118,7 +980,6 @@ const JSON = [
                 "translate": "バイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1127,7 +988,6 @@ const JSON = [
                 "translate": "キロバイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1136,7 +996,6 @@ const JSON = [
                 "translate": "メガバイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1145,7 +1004,6 @@ const JSON = [
                 "translate": "ギガバイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1154,7 +1012,6 @@ const JSON = [
                 "translate": "テラバイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1163,7 +1020,6 @@ const JSON = [
                 "translate": "ペタバイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1172,7 +1028,6 @@ const JSON = [
                 "translate": "エクサバイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1181,7 +1036,6 @@ const JSON = [
                 "translate": "ゼタバイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div",
@@ -1190,7 +1044,6 @@ const JSON = [
                 "translate": "ヨタバイト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1199,7 +1052,6 @@ const JSON = [
                 "translate": "約"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1208,7 +1060,6 @@ const JSON = [
                 "translate": "前"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1217,7 +1068,6 @@ const JSON = [
                 "translate": "分"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1226,7 +1076,6 @@ const JSON = [
                 "translate": "時間"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1235,7 +1084,6 @@ const JSON = [
                 "translate": "日"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1244,7 +1092,6 @@ const JSON = [
                 "translate": "分"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1253,7 +1100,6 @@ const JSON = [
                 "translate": "時間"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1262,7 +1108,6 @@ const JSON = [
                 "translate": "日"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1271,7 +1116,6 @@ const JSON = [
                 "translate": "1月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1280,7 +1124,6 @@ const JSON = [
                 "translate": "2月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1289,7 +1132,6 @@ const JSON = [
                 "translate": "3月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1298,7 +1140,6 @@ const JSON = [
                 "translate": "4月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1307,7 +1148,6 @@ const JSON = [
                 "translate": "5月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1316,7 +1156,6 @@ const JSON = [
                 "translate": "6月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1325,7 +1164,6 @@ const JSON = [
                 "translate": "7月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1334,7 +1172,6 @@ const JSON = [
                 "translate": "8月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1343,7 +1180,6 @@ const JSON = [
                 "translate": "9月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1352,7 +1188,6 @@ const JSON = [
                 "translate": "10月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1361,7 +1196,6 @@ const JSON = [
                 "translate": "11月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1370,7 +1204,6 @@ const JSON = [
                 "translate": "12月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1379,7 +1212,6 @@ const JSON = [
                 "translate": "たった今"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1388,7 +1220,6 @@ const JSON = [
                 "translate": "日"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1397,7 +1228,6 @@ const JSON = [
                 "translate": "日"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1406,7 +1236,6 @@ const JSON = [
                 "translate": "日"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1415,7 +1244,6 @@ const JSON = [
                 "translate": "日"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1424,7 +1252,6 @@ const JSON = [
                 "translate": " 午前"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
@@ -1433,7 +1260,6 @@ const JSON = [
                 "translate": " 午後"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > span",
                     "#modal-portal > div > div > div > div > form > div > div > button > span"
@@ -1442,7 +1268,6 @@ const JSON = [
                 "translate": "名前変更"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > span"
                 ],
@@ -1450,7 +1275,6 @@ const JSON = [
                 "translate": "移動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > span"
                 ],
@@ -1458,7 +1282,6 @@ const JSON = [
                 "translate": "ダウンロード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > span"
                 ],
@@ -1466,7 +1289,6 @@ const JSON = [
                 "translate": "権限"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > span"
                 ],
@@ -1474,7 +1296,6 @@ const JSON = [
                 "translate": "コピー"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > span"
                 ],
@@ -1482,7 +1303,6 @@ const JSON = [
                 "translate": "解凍"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > label"
                 ],
@@ -1496,7 +1316,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/files(\/new|\/edit(#.*)?|#.*)?$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > button > span"
                 ],
@@ -1504,7 +1323,6 @@ const JSON = [
                 "translate": "内容を保存"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > button > span"
                 ],
@@ -1518,7 +1336,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/databases",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > p"
                 ],
@@ -1532,7 +1349,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/schedules(\/\d+)?",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > p"
                 ],
@@ -1540,7 +1356,6 @@ const JSON = [
                 "translate": "このサーバではスケジュールが設定されていません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > button > span",
                     "#modal-portal > div > div > div > div > form > div > button > span"
@@ -1549,7 +1364,6 @@ const JSON = [
                 "translate": "スケジュールを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > h3"
                 ],
@@ -1557,7 +1371,6 @@ const JSON = [
                 "translate": "新しいスケジュールを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > label"
                 ],
@@ -1565,7 +1378,6 @@ const JSON = [
                 "translate": "スケジュール名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > p.input-help"
                 ],
@@ -1573,7 +1385,6 @@ const JSON = [
                 "translate": "人間が理解できるようなスケジュールの名前"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div",
                     "#app > div > div > section > div > a > div > div > p",
@@ -1583,7 +1394,6 @@ const JSON = [
                 "translate": "分"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div",
                     "#app > div > div > section > div > a > div > div > p",
@@ -1593,7 +1403,6 @@ const JSON = [
                 "translate": "時間"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div"
                 ],
@@ -1601,7 +1410,6 @@ const JSON = [
                 "translate": "一ヶ月に"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div"
                 ],
@@ -1609,7 +1417,6 @@ const JSON = [
                 "translate": "一週間に"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > p"
                 ],
@@ -1617,7 +1424,6 @@ const JSON = [
                 "translate": "スケジュールシステムは、タスクの実行を開始するタイミングを定義するときに、Cronjob構文の使用をサポートします。上記のフィールドを使用して、これらのタスクの実行を開始するタイミングを指定します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > label"
                 ],
@@ -1625,7 +1431,6 @@ const JSON = [
                 "translate": "サーバがオンラインのときのみ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -1633,7 +1438,6 @@ const JSON = [
                 "translate": "サーバが実行中のときにのみ、このスケジュールを実行します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > label"
                 ],
@@ -1641,7 +1445,6 @@ const JSON = [
                 "translate": "スケジュールを有効化"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -1649,7 +1452,6 @@ const JSON = [
                 "translate":"このスケジュールは有効になったときに自動的に実行されます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > label"
                 ],
@@ -1657,7 +1459,6 @@ const JSON = [
                 "translate": "有効化"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -1665,7 +1466,6 @@ const JSON = [
                 "translate": "無効にした場合このスケジュールまたはタスクは実行されません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > a > div > p",
                     "#app > div > div > section > div > div > div > div > p"
@@ -1674,7 +1474,6 @@ const JSON = [
                 "translate": "最終実行："
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > a > div > div > p",
                     "#app > div > div > section > div > div > div > p"
@@ -1683,7 +1482,6 @@ const JSON = [
                 "translate": "月"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > a > div > div > p",
                     "#app > div > div > section > div > div > div > p"
@@ -1692,7 +1490,6 @@ const JSON = [
                 "translate": "日 "
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > a > div > div > p",
                     "#app > div > div > section > div > div > div > p"
@@ -1701,7 +1498,6 @@ const JSON = [
                 "translate": "(週)"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > a > div > p",
                     "#app > div > div > section > div > div > div > div > h3 > span"
@@ -1710,7 +1506,6 @@ const JSON = [
                 "translate": "アクティブ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > a > div > p",
                     "#app > div > div > section > div > div > div > div > h3 > span"
@@ -1719,7 +1514,6 @@ const JSON = [
                 "translate": "無効"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -1727,7 +1521,6 @@ const JSON = [
                 "translate": "次の実行："
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h3"
                 ],
@@ -1735,7 +1528,6 @@ const JSON = [
                 "translate": "スケジュールの編集"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > button > span"
                 ],
@@ -1743,7 +1535,6 @@ const JSON = [
                 "translate": "新しいタスク"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > h2"
                 ],
@@ -1751,7 +1542,6 @@ const JSON = [
                 "translate": "タスクを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > h2"
                 ],
@@ -1759,7 +1549,6 @@ const JSON = [
                 "translate": "タスクを編集"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > label"
                 ],
@@ -1767,7 +1556,6 @@ const JSON = [
                 "translate": "動作"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > select"
                 ],
@@ -1775,7 +1563,6 @@ const JSON = [
                 "translate": "コマンド送信"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > select"
                 ],
@@ -1783,7 +1570,6 @@ const JSON = [
                 "translate": "起動モードを送信"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > select"
                 ],
@@ -1791,7 +1577,6 @@ const JSON = [
                 "translate": "バックアップを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -1799,7 +1584,6 @@ const JSON = [
                 "translate": "コマンド送信"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -1807,7 +1591,6 @@ const JSON = [
                 "translate": "起動モードを送信"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -1815,7 +1598,6 @@ const JSON = [
                 "translate": "バックアップを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > label"
                 ],
@@ -1823,7 +1605,6 @@ const JSON = [
                 "translate": "実行間隔(秒数)"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > p"
                 ],
@@ -1831,7 +1612,6 @@ const JSON = [
                 "translate": "前のタスクが実行されてから、このタスクを実行するまでの感覚です。このタスクがスケジュールの最初のタスクである場合、これは適用されません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > p"
                 ],
@@ -1839,7 +1619,6 @@ const JSON = [
                 "translate": "時間は有効な数字であり、0から900までの整数である必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > label"
                 ],
@@ -1847,7 +1626,6 @@ const JSON = [
                 "translate": "送信するペイロード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -1855,7 +1633,6 @@ const JSON = [
                 "translate": "ペイロードは必ず指定する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > select"
                 ],
@@ -1863,7 +1640,6 @@ const JSON = [
                 "translate": "サーバを起動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > select"
                 ],
@@ -1871,7 +1647,6 @@ const JSON = [
                 "translate": "サーバを再起動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > select"
                 ],
@@ -1879,7 +1654,6 @@ const JSON = [
                 "translate": "サーバを停止"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > select"
                 ],
@@ -1887,7 +1661,6 @@ const JSON = [
                 "translate": "サーバを強制起動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > label"
                 ],
@@ -1895,7 +1668,6 @@ const JSON = [
                 "translate": "除外するファイル"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -1903,7 +1675,6 @@ const JSON = [
                 "translate": "オプションです。このバックアップで除外するファイルとフォルダを記述します。デフォルトでは、.pteroignoreファイルの内容が適用されます。また、バックアップのファイル数が制限に達した場合、古いバックアップから順番に置換されます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > button > span"
                 ],
@@ -1911,7 +1682,6 @@ const JSON = [
                 "translate": "タスクを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -1919,7 +1689,6 @@ const JSON = [
                 "translate": "タスクの削除"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > p"
                 ],
@@ -1927,7 +1696,6 @@ const JSON = [
                 "translate": "本当にこのタスクを削除しますか？この操作を戻すことはできません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div > button > span"
                 ],
@@ -1935,7 +1703,6 @@ const JSON = [
                 "translate": "タスクを削除"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > button > span"
                 ],
@@ -1943,7 +1710,6 @@ const JSON = [
                 "translate": "削除"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -1951,7 +1717,6 @@ const JSON = [
                 "translate": "本当にこのスケジュールを削除しますか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > p"
                 ],
@@ -1959,7 +1724,6 @@ const JSON = [
                 "translate": "本当にこのスケジュールを削除しますか？このスケジュールに関連するタスクも削除され、実行中のタスクは強制終了します。この操作を戻すことはできません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div > button > span"
                 ],
@@ -1973,7 +1737,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/users",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > p"
                 ],
@@ -1981,7 +1744,6 @@ const JSON = [
                 "translate": "サブユーザがいないようです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > button > span"
                 ],
@@ -1989,7 +1751,6 @@ const JSON = [
                 "translate": "ユーザを追加"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > h2"
                 ],
@@ -1997,7 +1758,6 @@ const JSON = [
                 "translate": "新しいサブユーザを追加"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > button > span",
                     "#modal-portal > div > div > div > div > form > div > button > span"
@@ -2006,7 +1766,6 @@ const JSON = [
                 "translate": "ユーザを招待"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > label"
                 ],
@@ -2014,7 +1773,6 @@ const JSON = [
                 "translate": "ユーザのメールアドレス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > p"
                 ],
@@ -2022,7 +1780,6 @@ const JSON = [
                 "translate": "このサーバのサブユーザとして追加するサブユーザのメールアドレスです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > p"
                 ],
@@ -2030,7 +1787,6 @@ const JSON = [
                 "translate": "ユーザの正しいメールアドレスを指定する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2038,7 +1794,6 @@ const JSON = [
                 "translate": "操作"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2046,7 +1801,6 @@ const JSON = [
                 "translate": "サーバの動作状態を制御したり、コマンドを送信したりするユーザーの機能を制御する権限です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2054,7 +1808,6 @@ const JSON = [
                 "translate": "ユーザがコンソールを介してサーバにコマンドを送信できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2062,7 +1815,6 @@ const JSON = [
                 "translate": "コンソール"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2070,7 +1822,6 @@ const JSON = [
                 "translate": "サーバが停止していた際にサーバを起動することができるようになります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2078,7 +1829,6 @@ const JSON = [
                 "translate": "ユーザがサーバの再起動を実行できるようにします。これにより、サーバがオフラインの場合はサーバを起動できますが、サーバを完全に停止した状態にすることはできません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2086,7 +1836,6 @@ const JSON = [
                 "translate": "再起動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2095,7 +1844,6 @@ const JSON = [
                 "translate": "起動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2103,7 +1851,6 @@ const JSON = [
                 "translate": "サーバが起動している時に、サーバを停止することができるようになります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2111,7 +1858,6 @@ const JSON = [
                 "translate": "停止"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2120,7 +1866,6 @@ const JSON = [
                 "translate": "ユーザ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2128,7 +1873,6 @@ const JSON = [
                 "translate": "ユーザがサーバの他のサブユーザーを管理できるようにする権限です。自分のアカウントを編集したり、自分にない権限を割り当てたりすることはできません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2137,7 +1881,6 @@ const JSON = [
                 "translate": "作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2145,7 +1888,6 @@ const JSON = [
                 "translate": "ユーザがサーバの新しいサブユーザーを作成できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2154,7 +1896,6 @@ const JSON = [
                 "translate": "閲覧"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2162,7 +1903,6 @@ const JSON = [
                 "translate": "ユーザがサーバのサブユーザとその権限を表示できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2171,7 +1911,6 @@ const JSON = [
                 "translate": "更新"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2179,7 +1918,6 @@ const JSON = [
                 "translate": "ユーザが他のサブユーザを変更できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2188,7 +1926,6 @@ const JSON = [
                 "translate": "削除"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2196,7 +1933,6 @@ const JSON = [
                 "translate": "ユーザがサーバからサブユーザを削除できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2205,7 +1941,6 @@ const JSON = [
                 "translate": "ファイル"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2213,7 +1948,6 @@ const JSON = [
                 "translate": "ユーザがサーバのファイルを変更できるようにする権限です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2222,7 +1956,6 @@ const JSON = [
                 "translate": "削除"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2230,7 +1963,6 @@ const JSON = [
                 "translate": "ユーザがパネルまたは直接アップロードを介して追加のファイルおよびフォルダを作成できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2238,7 +1970,6 @@ const JSON = [
                 "translate": "ユーザがディレクトリの内容を表示できるようにしますが、ファイルの内容を表示したりダウンロードしたりすることはできません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2246,7 +1977,6 @@ const JSON = [
                 "translate": "内容を閲覧"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2254,7 +1984,6 @@ const JSON = [
                 "translate": "ユーザが特定のファイルの内容を表示できるようにします。これにより、ユーザはファイルをダウンロードすることもできます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2262,7 +1991,6 @@ const JSON = [
                 "translate": "ユーザーが既存のファイルまたはディレクトリの内容を更新できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2270,7 +1998,6 @@ const JSON = [
                 "translate": "ユーザがファイルまたはディレクトリを削除できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2279,7 +2006,6 @@ const JSON = [
                 "translate": "アーカイブ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2287,7 +2013,6 @@ const JSON = [
                 "translate": "ユーザがディレクトリの内容をアーカイブしたり、システム上の既存のアーカイブを解凍したりできるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2295,7 +2020,6 @@ const JSON = [
                 "translate": "ユーザがSFTPに接続し、他の割り当てられたファイル権限を使用してサーバーファイルを管理できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2304,7 +2028,6 @@ const JSON = [
                 "translate": "バックアップ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2312,7 +2035,6 @@ const JSON = [
                 "translate": "サーバのバックアップを作成および管理するユーザの機能を制御するアクセス許可。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2320,7 +2042,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバの新しいバックアップを作成できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2328,7 +2049,6 @@ const JSON = [
                 "translate": "ユーザーがこのサーバーに存在するすべてのバックアップを表示できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2336,7 +2056,6 @@ const JSON = [
                 "translate": "ユーザがシステムからバックアップを削除できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2345,7 +2064,6 @@ const JSON = [
                 "translate": "ダウンロード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2353,7 +2071,6 @@ const JSON = [
                 "translate": "ユーザがサーバのバックアップをダウンロードできるようにします。危険：これにより、ユーザはバックアップ内のサーバのすべてのファイルにアクセスすることができます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2362,7 +2079,6 @@ const JSON = [
                 "translate": "復元"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2370,7 +2086,6 @@ const JSON = [
                 "translate": "ユーザがサーバのバックアップを復元できるようにします。危険：これにより、ユーザはサーバのすべてのファイルを削除することができます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2378,7 +2093,6 @@ const JSON = [
                 "translate": "割り当て"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2386,7 +2100,6 @@ const JSON = [
                 "translate": "このサーバーのポート割り当てを変更するユーザーの機能を制御するアクセス許可。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2394,7 +2107,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバに現在割り当てられているすべての割り当てを表示できるようにします。このサーバへの任意のレベルのアクセス権を持つユーザは、いつでもプライマリ割り当てを表示できます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2402,7 +2114,6 @@ const JSON = [
                 "translate": "ユーザがサーバに追加の割り当てをすることができるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2410,7 +2121,6 @@ const JSON = [
                 "translate": "ユーザがプライマリサーバの割り当てを変更し、各割り当てにメモを添付できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2418,7 +2128,6 @@ const JSON = [
                 "translate": "ユーザーがサーバーから割り当てを削除できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2426,7 +2135,6 @@ const JSON = [
                 "translate": "ユーザがサーバに追加の割り当てを割り当てることができるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2434,7 +2142,6 @@ const JSON = [
                 "translate": "ユーザがプライマリサーバの割り当てを変更し、各割り当てにメモを添付できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2442,7 +2149,6 @@ const JSON = [
                 "translate": "ユーザがサーバから割り当てを削除できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2450,7 +2156,6 @@ const JSON = [
                 "translate": "スタートアップ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2458,7 +2163,6 @@ const JSON = [
                 "translate": "このサーバの起動パラメータを表示するユーザの機能を制御するアクセス許可。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2466,7 +2170,6 @@ const JSON = [
                 "translate": "ユーザがサーバの起動変数を表示できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2474,7 +2177,6 @@ const JSON = [
                 "translate": "ユーザがサーバの起動変数を変更できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2482,7 +2184,6 @@ const JSON = [
                 "translate": "Dockerイメージ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2490,7 +2191,6 @@ const JSON = [
                 "translate": "サーバの実行時に使用されるDockerイメージをユーザが変更できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2498,7 +2198,6 @@ const JSON = [
                 "translate": "データベース"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2506,7 +2205,6 @@ const JSON = [
                 "translate": "このサーバのデータベース管理へのユーザのアクセスを制御する権限です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2514,7 +2212,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバの新しいデータベースを作成できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2522,7 +2219,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバに関連付けられているデータベースを表示できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2530,7 +2226,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバの新しいデータベースを作成できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2538,7 +2233,6 @@ const JSON = [
                 "translate": "ユーザがデータベースのパスワードを変更できるようにします。ユーザーにview_password権限がない場合、更新されたパスワードは表示されません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2546,7 +2240,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバからデータベースを削除できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2554,7 +2247,6 @@ const JSON = [
                 "translate": "パスワードの閲覧(view<span>_</span>password)"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2562,7 +2254,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバのデータベースに関連付けられたパスワードを表示できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2570,7 +2261,6 @@ const JSON = [
                 "translate": "スケジュール"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2578,7 +2268,6 @@ const JSON = [
                 "translate": "このサーバのデータベース管理へのユーザのアクセスを制御する権限です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2586,7 +2275,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバーの新しいスケジュールを作成できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2594,7 +2282,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバのスケジュールとそれに関連付けられているタスクを表示できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2602,7 +2289,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバのスケジュールを更新し、タスクをスケジュールできるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2610,7 +2296,6 @@ const JSON = [
                 "translate": "ユーザーがこのサーバーのスケジュールを削除できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > div > p"
                 ],
@@ -2618,7 +2303,6 @@ const JSON = [
                 "translate": "設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > p"
                 ],
@@ -2626,7 +2310,6 @@ const JSON = [
                 "translate": "このサーバーの設定へのユーザーのアクセスを制御する権限です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2635,7 +2318,6 @@ const JSON = [
                 "translate": "名前の変更"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2643,7 +2325,6 @@ const JSON = [
                 "translate": "ユーザがこのサーバの名前を変更できるようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2652,7 +2333,6 @@ const JSON = [
                 "translate": "再インストール"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
                 ],
@@ -2666,7 +2346,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/backups",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > p"
                 ],
@@ -2674,7 +2353,6 @@ const JSON = [
                 "translate": "バックアップはこのサーバでは利用できません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > p"
                 ],
@@ -2688,7 +2366,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/network",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > label"
                 ],
@@ -2696,7 +2373,6 @@ const JSON = [
                 "translate": "ホスト名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > label"
                 ],
@@ -2714,7 +2390,6 @@ const JSON = [
                 "translate": "ノート"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > span"
                 ],
@@ -2722,7 +2397,6 @@ const JSON = [
                 "translate": "主要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > button > span"
                 ],
@@ -2730,7 +2404,6 @@ const JSON = [
                 "translate": "主要にする"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > p"
                 ],
@@ -2741,7 +2414,6 @@ const JSON = [
                 "translate": "つのネットワークを使用しており、このサーバでは"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > p"
                 ],
@@ -2749,7 +2421,6 @@ const JSON = [
                 "translate": "現在、"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > p"
                 ],
@@ -2763,7 +2434,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/startup",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2771,7 +2441,6 @@ const JSON = [
                 "translate": "起動コマンド"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2779,7 +2448,6 @@ const JSON = [
                 "translate": "Dockerイメージ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2787,7 +2455,6 @@ const JSON = [
                 "translate": "これは高度な機能であり、このサーバインスタンスの実行時に使用するDockerイメージを選択できます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2795,7 +2462,6 @@ const JSON = [
                 "translate": "このサーバのDockerイメージは管理者によって手動で設定されているため、このUIで変更できません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > h3"
                 ],
@@ -2803,7 +2469,6 @@ const JSON = [
                 "translate": "変数"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p > span"
                 ],
@@ -2811,7 +2476,6 @@ const JSON = [
                 "translate": "閲覧のみ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2819,7 +2483,6 @@ const JSON = [
                 "translate": "Minecraftのバージョン"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2827,7 +2490,6 @@ const JSON = [
                 "translate": "ダウンロードするMinecraftのバージョンです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2835,7 +2497,6 @@ const JSON = [
                 "translate": "常に最新バージョンを入手するには、latestを使用してください。無効なバージョンはデフォルトで最新になります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p > span"
                 ],
@@ -2843,7 +2504,6 @@ const JSON = [
                 "translate": "サーバのJarファイル"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2851,7 +2511,6 @@ const JSON = [
                 "translate": "サーバを実行するサーバのjarファイルの名前です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2859,7 +2518,6 @@ const JSON = [
                 "translate": "ビルド番号"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > p"
                 ],
@@ -2873,7 +2531,6 @@ const JSON = [
         "path": "^\/server\/[a-z0-9]+\/settings$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -2881,7 +2538,6 @@ const JSON = [
                 "translate": "SFTP情報"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > label"
                 ],
@@ -2889,7 +2545,6 @@ const JSON = [
                 "translate": "サーバアドレス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > label"
                 ],
@@ -2897,7 +2552,6 @@ const JSON = [
                 "translate": "ユーザ名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > div > p"
                 ],
@@ -2905,7 +2559,6 @@ const JSON = [
                 "translate": "SFTPパスワードは、このパネルへのアクセスに使用するパスワードと同じです"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > a"
                 ],
@@ -2913,7 +2566,6 @@ const JSON = [
                 "translate": "SFTPを起動"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > p"
                 ],
@@ -2921,7 +2573,6 @@ const JSON = [
                 "translate": "サーバ名を変更"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > form > label"
                 ],
@@ -2929,7 +2580,6 @@ const JSON = [
                 "translate": "サーバ名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > form > p"
                 ],
@@ -2937,7 +2587,6 @@ const JSON = [
                 "translate": "名前は必ず指定する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -2945,7 +2594,6 @@ const JSON = [
                 "translate": "デバッグ情報"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > p"
                 ],
@@ -2953,7 +2601,6 @@ const JSON = [
                 "translate": "ノード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > p"
                 ],
@@ -2961,7 +2608,6 @@ const JSON = [
                 "translate": "サーバID"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -2969,7 +2615,6 @@ const JSON = [
                 "translate": "サーバを再インストール"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p"
                 ],
@@ -2977,7 +2622,6 @@ const JSON = [
                 "translate": "サーバを再インストールするとサーバが停止し、最初に設定したインストールスクリプトを再実行します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > p > strong"
                 ],
@@ -2985,7 +2629,6 @@ const JSON = [
                 "translate": "このプロセス中に一部のファイルが削除または変更される可能性があります。続行する前にデータをバックアップしてください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > button > span"
                 ],
@@ -2993,7 +2636,6 @@ const JSON = [
                 "translate": "サーバを再インストール"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > h2"
                 ],
@@ -3001,7 +2643,6 @@ const JSON = [
                 "translate": "本当にサーバを再インストールしますか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > p"
                 ],
@@ -3009,7 +2650,6 @@ const JSON = [
                 "translate": "このプロセス中にサーバが停止し、一部のファイルが削除または変更される可能性があります。続行しますか？"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#modal-portal > div > div > div > div > div > button"
                 ],
@@ -3017,7 +2657,6 @@ const JSON = [
                 "translate": "サーバを再インストールする"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > div > p"
                 ],
@@ -3025,7 +2664,6 @@ const JSON = [
                 "translate": ""
             },
             {
-                "properties": [],
                 "selectors": [
                     "#app > div > div > section > div > div > div > div > div > div > div > div > p"
                 ],
@@ -3039,7 +2677,6 @@ const JSON = [
         "path": "^\/admin",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li"
                 ],
@@ -3047,7 +2684,6 @@ const JSON = [
                 "translate": "通常の管理"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3055,7 +2691,6 @@ const JSON = [
                 "translate": "概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3063,7 +2698,6 @@ const JSON = [
                 "translate": "設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3071,7 +2705,6 @@ const JSON = [
                 "translate": "API"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li"
                 ],
@@ -3080,7 +2713,6 @@ const JSON = [
                 "translate": "高度な管理"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3088,7 +2720,6 @@ const JSON = [
                 "translate": "データベース"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3096,7 +2727,6 @@ const JSON = [
                 "translate": "場所"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3104,7 +2734,6 @@ const JSON = [
                 "translate": "ノード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3112,7 +2741,6 @@ const JSON = [
                 "translate": "サーバ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3120,7 +2748,6 @@ const JSON = [
                 "translate": "ユーザ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li"
                 ],
@@ -3128,7 +2755,6 @@ const JSON = [
                 "translate": "サービスの管理"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3136,7 +2762,6 @@ const JSON = [
                 "translate": "マウント"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > aside > div > section > ul > li > a > span"
                 ],
@@ -3150,7 +2775,6 @@ const JSON = [
         "path": "^\/admin$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1"
                 ],
@@ -3158,7 +2782,6 @@ const JSON = [
                 "translate": "管理概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -3166,7 +2789,6 @@ const JSON = [
                 "translate": "システムをひと目で閲覧できます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -3174,7 +2796,6 @@ const JSON = [
                 "translate": "システム情報"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div"
                 ],
@@ -3182,7 +2803,6 @@ const JSON = [
                 "translate": "あなたのパネルは"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > strong"
                 ],
@@ -3190,7 +2810,6 @@ const JSON = [
                 "translate": "アップデートされていません！"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div"
                 ],
@@ -3198,7 +2817,6 @@ const JSON = [
                 "translate": "最新バージョンは"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div"
                 ],
@@ -3206,7 +2824,6 @@ const JSON = [
                 "translate": "ですが、現在実行中のバージョンは"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > a > button"
                 ],
@@ -3214,7 +2831,6 @@ const JSON = [
                 "translate": "助けを得る"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > a > button"
                 ],
@@ -3222,7 +2838,6 @@ const JSON = [
                 "translate": "ドキュメント"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > a > button"
                 ],
@@ -3230,7 +2845,6 @@ const JSON = [
                 "translate": "GitHub"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > a > button"
                 ],
@@ -3244,7 +2858,6 @@ const JSON = [
         "path": "^\/admin\/settings",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > ul > li > a"
                 ],
@@ -3252,7 +2865,6 @@ const JSON = [
                 "translate": "一般"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > ul > li > a"
                 ],
@@ -3260,7 +2872,6 @@ const JSON = [
                 "translate": "メール"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > ul > li > a"
                 ],
@@ -3274,7 +2885,6 @@ const JSON = [
         "path": "^\/admin\/settings$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1",
                     "body > div > div > section > div > div > div > div > h3"
@@ -3283,7 +2893,6 @@ const JSON = [
                 "translate": "パネル設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -3291,7 +2900,6 @@ const JSON = [
                 "translate": "好みに合わせてPterodactylを設定します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3299,7 +2907,6 @@ const JSON = [
                 "translate": "会社名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p > small"
                 ],
@@ -3307,7 +2914,6 @@ const JSON = [
                 "translate": "これは、パネル全体およびクライアントに送信される電子メールで使用される名前です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3315,7 +2921,6 @@ const JSON = [
                 "translate": "Googleアナリティクス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p > small"
                 ],
@@ -3323,7 +2928,6 @@ const JSON = [
                 "translate": "これはあなたのGoogleアナリティクス トラッキングIDです。 例：UA-123723645-2"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3331,7 +2935,6 @@ const JSON = [
                 "translate": "二段階認証の要求"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > div > label"
                 ],
@@ -3339,7 +2942,6 @@ const JSON = [
                 "translate": "要求しない"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > div > label"
                 ],
@@ -3347,7 +2949,6 @@ const JSON = [
                 "translate": "管理者のみ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > div > label"
                 ],
@@ -3355,7 +2956,6 @@ const JSON = [
                 "translate": "すべてのユーザ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p > small"
                 ],
@@ -3363,7 +2963,6 @@ const JSON = [
                 "translate": "有効にした場合、選択したグループに分類されるアカウントでは、パネルを使用するために二段階認証を有効にする必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3371,7 +2970,6 @@ const JSON = [
                 "translate": "既定の言語"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p > small"
                 ],
@@ -3385,7 +2983,6 @@ const JSON = [
         "path": "^\/admin\/settings\/mail$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1",
                     "body > div > div > section > div > div > div > div > h3"
@@ -3394,7 +2991,6 @@ const JSON = [
                 "translate": "メール設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -3402,7 +2998,6 @@ const JSON = [
                 "translate": "Pterodactylが電子メールの送信を処理する方法を構成します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -3410,7 +3005,6 @@ const JSON = [
                 "translate": "メール設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3418,7 +3012,6 @@ const JSON = [
                 "translate": "SMTPホスト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p"
                 ],
@@ -3426,7 +3019,6 @@ const JSON = [
                 "translate": "メールを送信するSMTPサーバアドレスを入力します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3434,7 +3026,6 @@ const JSON = [
                 "translate": "SMTPポート"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p"
                 ],
@@ -3442,7 +3033,6 @@ const JSON = [
                 "translate": "メールの送信元となるSMTPサーバのポートを入力します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3450,7 +3040,6 @@ const JSON = [
                 "translate": "暗号化"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p"
                 ],
@@ -3458,7 +3047,6 @@ const JSON = [
                 "translate": "メールを送信するときに使用する暗号化のタイプを選択します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3466,7 +3054,6 @@ const JSON = [
                 "translate": "ユーザ名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p"
                 ],
@@ -3474,7 +3061,6 @@ const JSON = [
                 "translate": "SMTPサーバに接続するときに使用するユーザー名です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3482,7 +3068,6 @@ const JSON = [
                 "translate": "パスワード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p"
                 ],
@@ -3490,7 +3075,6 @@ const JSON = [
                 "translate": "SMTPユーザー名と組み合わせて使用するパスワードです。既存のパスワードを引き続き使用するには、空白のままにします。パスワードを空の値に設定するには、"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p"
                 ],
@@ -3498,7 +3082,6 @@ const JSON = [
                 "translate": "と入力してください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3506,7 +3089,6 @@ const JSON = [
                 "translate": "メール送信元名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > label"
                 ],
@@ -3514,7 +3096,6 @@ const JSON = [
                 "translate": "メール送信元アドレス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p"
                 ],
@@ -3522,7 +3103,6 @@ const JSON = [
                 "translate": "メールの発信元となるメールアドレスを入力します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > div > div > p"
                 ],
@@ -3530,7 +3110,6 @@ const JSON = [
                 "translate": "メールの送信元の名前です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#testButton"
                 ],
@@ -3538,7 +3117,6 @@ const JSON = [
                 "translate": "テスト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#saveButton"
                 ],
@@ -3552,7 +3130,6 @@ const JSON = [
         "path": "^\/admin\/settings\/advanced$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1",
                     "body > div > div > section > div > div > div > div > h3"
@@ -3561,7 +3138,6 @@ const JSON = [
                 "translate": "高度な設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -3569,7 +3145,6 @@ const JSON = [
                 "translate": "Pterodactylの詳細設定を構成します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > label"
                 ],
@@ -3577,7 +3152,6 @@ const JSON = [
                 "translate": "ステータス"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > select"
                 ],
@@ -3585,7 +3159,6 @@ const JSON = [
                 "translate": "有効"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > select"
                 ],
@@ -3593,7 +3166,6 @@ const JSON = [
                 "translate": "無効"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > p"
                 ],
@@ -3601,7 +3173,6 @@ const JSON = [
                 "translate": "有効にすると、ログインフォームとパスワードリセットフォームがサイレントキャプチャチェックを実行し、必要に応じて表示されたキャプチャを表示します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > label"
                 ],
@@ -3609,7 +3180,6 @@ const JSON = [
                 "translate": "サイトキー"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > label"
                 ],
@@ -3617,7 +3187,6 @@ const JSON = [
                 "translate": "シークレットキー"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > p"
                 ],
@@ -3625,7 +3194,6 @@ const JSON = [
                 "translate": "PterodactylとGoogle間の通信に使用されます。必ず秘密にしてください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div"
                 ],
@@ -3633,7 +3201,6 @@ const JSON = [
                 "translate": "現在、このパネルに付属のreCAPTCHAキーを使用しています。セキュリティを向上させるために、"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > a"
                 ],
@@ -3641,7 +3208,6 @@ const JSON = [
                 "translate": "ここ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div"
                 ],
@@ -3649,7 +3215,6 @@ const JSON = [
                 "translate": "からキーを生成してください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > h3"
                 ],
@@ -3657,7 +3222,6 @@ const JSON = [
                 "translate": "HTTP接続"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > label"
                 ],
@@ -3665,7 +3229,6 @@ const JSON = [
                 "translate": "接続タイムアウト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > p"
                 ],
@@ -3673,7 +3236,6 @@ const JSON = [
                 "translate": "エラーをスローする前に接続を待機する時間(秒)。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > label"
                 ],
@@ -3681,7 +3243,6 @@ const JSON = [
                 "translate": "リクエストタイムアウト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > p"
                 ],
@@ -3689,7 +3250,6 @@ const JSON = [
                 "translate": "エラーをスローする前にリクエストを待機する時間(秒)。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > h3"
                 ],
@@ -3697,7 +3257,6 @@ const JSON = [
                 "translate": "自動割り当ての作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > p"
                 ],
@@ -3705,7 +3264,6 @@ const JSON = [
                 "translate": "有効になっている場合、ユーザはフロントエンドを介してサーバの新しい割り当てを自動的に作成するオプションがあります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > label"
                 ],
@@ -3713,7 +3271,6 @@ const JSON = [
                 "translate": "開始ポート"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > p"
                 ],
@@ -3721,7 +3278,6 @@ const JSON = [
                 "translate": "自動的に割り当てることができる範囲の開始ポートです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > label"
                 ],
@@ -3729,7 +3285,6 @@ const JSON = [
                 "translate": "終了ポート"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > div > div > div > p"
                 ],
@@ -3737,7 +3292,6 @@ const JSON = [
                 "translate": "自動的に割り当てることができる範囲の開始ポートです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > form > div > div > button"
                 ],
@@ -3752,7 +3306,6 @@ const JSON = [
         "path": "^\/admin\/api(\/new)?$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1",
                     "body > div > div > section > div > div > div > div > h3"
@@ -3761,7 +3314,6 @@ const JSON = [
                 "translate": "API設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -3769,7 +3321,6 @@ const JSON = [
                 "translate": "APIを介してこのパネルを管理するためのアクセス資格情報を制御します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -3777,7 +3328,6 @@ const JSON = [
                 "translate": "新しくAPIキーを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -3785,7 +3335,6 @@ const JSON = [
                 "translate": "資格リスト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > a"
                 ],
@@ -3793,7 +3342,6 @@ const JSON = [
                 "translate": "新しく作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > h3"
                 ],
@@ -3801,7 +3349,6 @@ const JSON = [
                 "translate": "権限を設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3809,7 +3356,6 @@ const JSON = [
                 "translate": "割り当て"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3817,7 +3363,6 @@ const JSON = [
                 "translate": "データベースホスト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3825,7 +3370,6 @@ const JSON = [
                 "translate": "卵(Egg<font>s</font>)"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3833,7 +3377,6 @@ const JSON = [
                 "translate": "ロケーション"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3841,7 +3384,6 @@ const JSON = [
                 "translate": "ネスト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3849,7 +3391,6 @@ const JSON = [
                 "translate": "ノード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3857,7 +3398,6 @@ const JSON = [
                 "translate": "割り当て"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3865,7 +3405,6 @@ const JSON = [
                 "translate": "サーバ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td"
                 ],
@@ -3873,7 +3412,6 @@ const JSON = [
                 "translate": "ユーザ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td > label"
                 ],
@@ -3881,7 +3419,6 @@ const JSON = [
                 "translate": "書き込み"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td > label"
                 ],
@@ -3889,7 +3426,6 @@ const JSON = [
                 "translate": "読み込み"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > table > tbody > tr > td > label"
                 ],
@@ -3897,7 +3433,6 @@ const JSON = [
                 "translate": "なし"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > div > label"
                 ],
@@ -3905,7 +3440,6 @@ const JSON = [
                 "translate": "概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > p"
                 ],
@@ -3913,7 +3447,6 @@ const JSON = [
                 "translate": "権限を割り当ててこの資格情報のセットを作成すると、戻って編集することはできなくなります。将来的に変更を加える必要がある場合は、新しい資格情報のセットを作成する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > form > div > div > div > button"
                 ],
@@ -3921,7 +3454,6 @@ const JSON = [
                 "translate": "資格情報を作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div"
                 ],
@@ -3929,7 +3461,6 @@ const JSON = [
                 "translate": "提供されたデータの検証中にエラーが発生しました。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div"
                 ],
@@ -3937,7 +3468,6 @@ const JSON = [
                 "translate": "説明は必須です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div"
                 ],
@@ -3945,7 +3475,6 @@ const JSON = [
                 "translate": "アカウント用に新しいアプリケーションAPIキーが生成されました。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -3953,7 +3482,6 @@ const JSON = [
                 "translate": "キー"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -3961,7 +3489,6 @@ const JSON = [
                 "translate": "メモ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -3969,7 +3496,6 @@ const JSON = [
                 "translate": "最終使用"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -3977,7 +3503,6 @@ const JSON = [
                 "translate": "作成日"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > h2"
                 ],
@@ -3985,7 +3510,6 @@ const JSON = [
                 "translate": "APIキーを取り消す"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > p"
                 ],
@@ -3993,7 +3517,6 @@ const JSON = [
                 "translate": "このAPIキーが取り消されると、現在それを使用しているアプリケーションは機能しなくなります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > button"
                 ],
@@ -4001,7 +3524,6 @@ const JSON = [
                 "translate": "キャンセル"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > div > button"
                 ],
@@ -4009,7 +3531,6 @@ const JSON = [
                 "translate": "取り消す"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > p"
                 ],
@@ -4023,7 +3544,6 @@ const JSON = [
         "path": "^\/admin\/databases$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1"
                 ],
@@ -4031,7 +3551,6 @@ const JSON = [
                 "translate": "データベースホスト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -4039,7 +3558,6 @@ const JSON = [
                 "translate": "サーバがデータベースを作成する際に使用されるデータベースホストです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -4047,7 +3565,6 @@ const JSON = [
                 "translate": "ホスト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > button"
                 ],
@@ -4055,7 +3572,6 @@ const JSON = [
                 "translate": "新しく作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > h4"
                 ],
@@ -4063,7 +3579,6 @@ const JSON = [
                 "translate": "データベースホストを作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > div > p"
                 ],
@@ -4071,7 +3586,6 @@ const JSON = [
                 "translate": "この場所を他の場所と区別するために使用される短い識別子です。1〜60文字である必要があります。例："
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > div > div > p"
                 ],
@@ -4079,7 +3593,6 @@ const JSON = [
                 "translate": "<em>パネル</em>からこのMySQLホストに接続して新しいデータベースを追加するときに使用する必要があるIPアドレスまたはFQDNです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > div > div > p"
                 ],
@@ -4087,7 +3600,6 @@ const JSON = [
                 "translate": "このホストでMySQLが実行されているポートです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > div > div > p"
                 ],
@@ -4095,7 +3607,6 @@ const JSON = [
                 "translate": "システム上に新しいユーザとデータベースを作成するのに十分な権限を持つアカウントのユーザー名です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > div > div > label"
                 ],
@@ -4103,7 +3614,6 @@ const JSON = [
                 "translate": "パスワード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > div > div > p"
                 ],
@@ -4111,7 +3621,6 @@ const JSON = [
                 "translate": "アカウントのパスワードです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > div > label"
                 ],
@@ -4119,7 +3628,6 @@ const JSON = [
                 "translate": "リンクされたノード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#select2-pNodeId-container"
                 ],
@@ -4127,7 +3635,6 @@ const JSON = [
                 "translate": "なし"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > div > p"
                 ],
@@ -4135,7 +3642,6 @@ const JSON = [
                 "translate": "この設定は、選択したノード上のサーバにデータベースを追加するときに、このデータベースホストにデフォルトで適用される以外に何もしません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > p"
                 ],
@@ -4143,7 +3649,6 @@ const JSON = [
                 "translate": "使用するアカウントには、<code>WITH GRANT OPTION</code>権限が<strong>必ず</strong>必要です。使用するアカウントにこの権限がないあ場合、データベースを作成する要求は失敗します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > p > strong"
                 ],
@@ -4151,7 +3656,6 @@ const JSON = [
                 "translate": "このパネルに定義したものと同じMySQLのアカウント情報を使用しないでください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > button"
                 ],
@@ -4159,7 +3663,6 @@ const JSON = [
                 "translate": "キャンセル"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newHostModal > div > div > form > div > button"
                 ],
@@ -4167,7 +3670,6 @@ const JSON = [
                 "translate": "作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th",
                     "#newHostModal > div > div > form > div > div > label"
@@ -4176,7 +3678,6 @@ const JSON = [
                 "translate": "名前"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th",
                     "#newHostModal > div > div > form > div > div > div > label"
@@ -4185,7 +3686,6 @@ const JSON = [
                 "translate": "ホスト"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th",
                     "#newHostModal > div > div > form > div > div > div > label"
@@ -4194,7 +3694,6 @@ const JSON = [
                 "translate": "ポート"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th",
                     "#newHostModal > div > div > form > div > div > div > label"
@@ -4203,7 +3702,6 @@ const JSON = [
                 "translate": "ユーザ名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4211,7 +3709,6 @@ const JSON = [
                 "translate": "データベース"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4225,7 +3722,6 @@ const JSON = [
         "path": "^\/admin\/locations$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1"
                 ],
@@ -4233,7 +3729,6 @@ const JSON = [
                 "translate": "場所"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -4241,7 +3736,6 @@ const JSON = [
                 "translate": "ノードを割り当てることができる場所です。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -4249,7 +3743,6 @@ const JSON = [
                 "translate": "場所"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > button"
                 ],
@@ -4257,7 +3750,6 @@ const JSON = [
                 "translate": "新しく作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newLocationModal > div > div > form > div > h4"
                 ],
@@ -4265,7 +3757,6 @@ const JSON = [
                 "translate": "新しく作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newLocationModal > div > div > form > div > div > div > p"
                 ],
@@ -4273,7 +3764,6 @@ const JSON = [
                 "translate": "この場所を他の場所と区別するために使用する短い識別子です。1〜60文字である必要があります。例："
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newLocationModal > div > div > form > div > div > div > p"
                 ],
@@ -4281,7 +3771,6 @@ const JSON = [
                 "translate": "この場所の詳細な説明です。 191文字未満である必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newLocationModal > div > div > form > div > button"
                 ],
@@ -4289,7 +3778,6 @@ const JSON = [
                 "translate": "キャンセル"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#newLocationModal > div > div > form > div > button"
                 ],
@@ -4297,7 +3785,6 @@ const JSON = [
                 "translate": "作成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th",
                     "#newLocationModal > div > div > form > div > div > div > label"
@@ -4306,7 +3793,6 @@ const JSON = [
                 "translate": "短縮コ－ド"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th",
                     "#newLocationModal > div > div > form > div > div > div > label"
@@ -4315,7 +3801,6 @@ const JSON = [
                 "translate": "概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4323,7 +3808,6 @@ const JSON = [
                 "translate": "ノード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4337,7 +3821,6 @@ const JSON = [
         "path": "^\/admin\/locations\/view\/[0-9]+$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -4345,7 +3828,6 @@ const JSON = [
                 "translate": "場所情報"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > label"
                 ],
@@ -4353,7 +3835,6 @@ const JSON = [
                 "translate": "短縮コード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > div > label"
                 ],
@@ -4361,7 +3842,6 @@ const JSON = [
                 "translate": "概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > form > div > button"
                 ],
@@ -4369,7 +3849,6 @@ const JSON = [
                 "translate": "保存"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -4377,7 +3856,6 @@ const JSON = [
                 "translate": "ノード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4385,7 +3863,6 @@ const JSON = [
                 "translate": "名前"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4399,7 +3876,6 @@ const JSON = [
         "path": "^\/admin\/nodes(\\?filter.*)?$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1"
                 ],
@@ -4407,7 +3883,6 @@ const JSON = [
                 "translate": "ノード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -4415,7 +3890,6 @@ const JSON = [
                 "translate": "システムで使用可能なすべてのノードです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -4433,7 +3907,6 @@ const JSON = [
                 "translate": "ノードを検索"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4441,7 +3914,6 @@ const JSON = [
                 "translate": "名前"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4449,7 +3921,6 @@ const JSON = [
                 "translate": "場所"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4457,7 +3928,6 @@ const JSON = [
                 "translate": "メモリ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4465,7 +3935,6 @@ const JSON = [
                 "translate": "ディスク"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4473,7 +3942,6 @@ const JSON = [
                 "translate": "サーバ数"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > table > tbody > tr > th"
                 ],
@@ -4481,7 +3949,6 @@ const JSON = [
                 "translate": "公開"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > form > div > div > a > button"
                 ],
@@ -4495,7 +3962,6 @@ const JSON = [
         "path": "^\/admin\/nodes\/new$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1"
                 ],
@@ -4503,7 +3969,6 @@ const JSON = [
                 "translate": "新しいノード"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -4511,7 +3976,6 @@ const JSON = [
                 "translate": "インストール先のサーバ用に新しいローカルノードまたはリモートノードを作成します。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > h3"
                 ],
@@ -4519,7 +3983,6 @@ const JSON = [
                 "translate": "基本"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4527,7 +3990,6 @@ const JSON = [
                 "translate": "名前"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > p"
                 ],
@@ -4535,7 +3997,6 @@ const JSON = [
                 "translate": "使用可能な文字は<code>a-zA-Z0-9_.-</code>と空白文字で、100文字以内である必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4543,7 +4004,6 @@ const JSON = [
                 "translate": "概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4551,7 +4011,6 @@ const JSON = [
                 "translate": "場所"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#select2-pLocationId-results > li"
                 ],
@@ -4559,7 +4018,6 @@ const JSON = [
                 "translate": "場所が見つかりませんでした"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4567,7 +4025,6 @@ const JSON = [
                 "translate": "ノードの可視性"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > div > label"
                 ],
@@ -4575,7 +4032,6 @@ const JSON = [
                 "translate": "公開"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > div > label"
                 ],
@@ -4583,7 +4039,6 @@ const JSON = [
                 "translate": "非公開"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section.content > form > div > div:nth-child(1) > div > div.box-body > div:nth-child(4) > p"
                 ],
@@ -4591,7 +4046,6 @@ const JSON = [
                 "translate": "<code>非公開</code>に設定した場合、ノードに自動でデプロイする機能を利用できません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > p"
                 ],
@@ -4599,7 +4053,6 @@ const JSON = [
                 "translate": "ドメイン名を入力してください(例：<code>node.example.com</code>)。IPアドレスは、このノードにSSLを使用していない場合にのみ使用できます。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4607,7 +4060,6 @@ const JSON = [
                 "translate": "SSLの使用"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > div > label"
                 ],
@@ -4615,7 +4067,6 @@ const JSON = [
                 "translate": "SSL接続を使用"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > div > label"
                 ],
@@ -4623,7 +4074,6 @@ const JSON = [
                 "translate": "HTTP接続を使用"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > p"
                 ],
@@ -4631,7 +4081,6 @@ const JSON = [
                 "translate": "パネルは現在、安全な接続を使用するように構成されています。ブラウザがノードに接続するには、SSL接続を使用する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4639,7 +4088,6 @@ const JSON = [
                 "translate": "中間プロキシ(<font>Behind</font> Proxy)"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > div > label"
                 ],
@@ -4647,7 +4095,6 @@ const JSON = [
                 "translate": "使用していない"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > div > label"
                 ],
@@ -4655,7 +4102,6 @@ const JSON = [
                 "translate": "使用している"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > p"
                 ],
@@ -4663,7 +4109,6 @@ const JSON = [
                 "translate": "Cloudflareなどのプロキシの背後でデーモンを実行している場合は、これを選択して、デーモンが起動時に証明書の検索をスキップするようにします。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > h3"
                 ],
@@ -4671,7 +4116,6 @@ const JSON = [
                 "translate": "設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > label"
                 ],
@@ -4679,7 +4123,6 @@ const JSON = [
                 "translate": "デーモンサーバファイルディレクトリ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > p"
                 ],
@@ -4687,7 +4130,6 @@ const JSON = [
                 "translate": "サーバファイルを保存するディレクトリを指定します。<strong>OVHを使用している場合はパーティションスキームを確認する必要があります。十分なスペースを確保するには、<code>/home/daemon-data</code>を指定してください。</strong>"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > label"
                 ],
@@ -4695,7 +4137,6 @@ const JSON = [
                 "translate": "トータルメモリ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > label"
                 ],
@@ -4703,7 +4144,6 @@ const JSON = [
                 "translate": "メモリの過剰割り当て"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > p"
                 ],
@@ -4711,7 +4151,6 @@ const JSON = [
                 "translate": "新しいサーバで使用可能なメモリの合計量を入力します。メモリの過剰割り当てを許可する場合は、許可するパーセンテージを入力します。割り当て超過のチェックを無効にするには、フィールドに<code>-1</code>と入力します。<code>0</code>を入力すると、ノードが制限を超えた場合に新しいサーバを作成できなくなります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > label"
                 ],
@@ -4719,7 +4158,6 @@ const JSON = [
                 "translate": "最大ディスクサイズ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > label"
                 ],
@@ -4727,7 +4165,6 @@ const JSON = [
                 "translate": "ディスクの過剰割り当て"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > p"
                 ],
@@ -4735,7 +4172,6 @@ const JSON = [
                 "translate": "新しいサーバで使用可能なディスクの合計量を入力します。ディスクの過剰割り当てを許可する場合は、許可するパーセンテージを入力します。割り当て超過のチェックを無効にするには、フィールドに<code>-1</code>と入力します。<code>0</code>を入力すると、ノードが制限を超えた場合に新しいサーバを作成できなくなります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > label"
                 ],
@@ -4743,7 +4179,6 @@ const JSON = [
                 "translate": "デーモンポート"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > label"
                 ],
@@ -4751,7 +4186,6 @@ const JSON = [
                 "translate": "デーモンSFTPポート"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > p"
                 ],
@@ -4759,7 +4193,6 @@ const JSON = [
                 "translate": "デーモンは独自のSFTP管理コンテナを実行し、メインの物理サーバでSSHdプロセスを使用しません。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > p > strong"
                 ],
@@ -4767,7 +4200,6 @@ const JSON = [
                 "translate": "物理サーバのSSHプロセスに割り当てたものと同じポートを使用しないでください。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > p"
                 ],
@@ -4775,7 +4207,6 @@ const JSON = [
                 "translate": "CloudFlare®の背後でデーモンを実行する場合は、デーモンポートを<code>8443</code>に設定して、SSLを介したWebSocketプロキシを許可する必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > button"
                 ],
@@ -4789,7 +4220,6 @@ const JSON = [
         "path": "^\/admin\/nodes\/view\/\\d+",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "title",
                     "body > div > div > section > div > div > div > ul > li > a"
@@ -4798,7 +4228,6 @@ const JSON = [
                 "translate": "概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "title",
                     "body > div > div > section > div > div > div > ul > li > a"
@@ -4807,7 +4236,6 @@ const JSON = [
                 "translate": "設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "title",
                     "body > div > div > section > div > div > div > ul > li > a"
@@ -4816,7 +4244,6 @@ const JSON = [
                 "translate": "構成"
             },
             {
-                "properties": [],
                 "selectors": [
                     "title",
                     "body > div > div > section > div > div > div > ul > li > a"
@@ -4825,7 +4252,6 @@ const JSON = [
                 "translate": "割り当て"
             },
             {
-                "properties": [],
                 "selectors": [
                     "title",
                     "body > div > div > section > div > div > div > ul > li > a"
@@ -4840,7 +4266,6 @@ const JSON = [
         "path": "^\/admin\/nodes\/view\/\\d+$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -4848,7 +4273,6 @@ const JSON = [
                 "translate": "ノードの要約ビューです。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > h3"
                 ],
@@ -4856,7 +4280,6 @@ const JSON = [
                 "translate": "情報"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > table > tbody > tr > td"
                 ],
@@ -4864,7 +4287,6 @@ const JSON = [
                 "translate": "デーモンバージョン"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > table > tbody > tr > td"
                 ],
@@ -4872,7 +4294,6 @@ const JSON = [
                 "translate": "システム情報"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > table > tbody > tr > td"
                 ],
@@ -4880,7 +4301,6 @@ const JSON = [
                 "translate": "CPUスレッド数"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div"
                 ],
@@ -4888,7 +4308,6 @@ const JSON = [
                 "translate": "概要"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > h3"
                 ],
@@ -4896,7 +4315,6 @@ const JSON = [
                 "translate": "ノードを削除"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > p"
                 ],
@@ -4904,7 +4322,6 @@ const JSON = [
                 "translate": "ノードの削除は元に戻せないアクションであり、このノードをパネルからすぐに削除します。 続行するには、このノードにサーバーが関連付けられていない必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > form > button"
                 ],
@@ -4912,7 +4329,6 @@ const JSON = [
                 "translate": "このノードを削除する"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > h3"
                 ],
@@ -4920,7 +4336,6 @@ const JSON = [
                 "translate": "要約"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > div > div > span"
                 ],
@@ -4928,7 +4343,6 @@ const JSON = [
                 "translate": "割り当て済みディスク"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > div > div > span"
                 ],
@@ -4936,7 +4350,6 @@ const JSON = [
                 "translate": "割り当て済みメモリ"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > div > div > div > div > div > div > div > div > span"
                 ],
@@ -4950,7 +4363,6 @@ const JSON = [
         "path": "^\/admin\/nodes\/view\/\\d+\/settings$",
         "rules": [
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > h1 > small"
                 ],
@@ -4958,7 +4370,6 @@ const JSON = [
                 "translate": "あなたのノード設定を構成。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > h3"
                 ],
@@ -4966,7 +4377,6 @@ const JSON = [
                 "translate": "設定"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4974,7 +4384,6 @@ const JSON = [
                 "translate": "ノード名"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > div > p > small"
                 ],
@@ -4982,7 +4391,6 @@ const JSON = [
                 "translate": "使用可能な文字は<code>a-zA-Z0-9_.-</code>と空白文字で、100文字以内である必要があります。"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4990,7 +4398,6 @@ const JSON = [
                 "translate": "説明"
             },
             {
-                "properties": [],
                 "selectors": [
                     "body > div > div > section > form > div > div > div > div > div > label"
                 ],
@@ -4998,7 +4405,6 @@ const JSON = [
                 "translate": "場所"
             },
             {
-                "properties": [],
                 "selectors": [
                     "#select2-location_id-ai-results > li"
                 ],
@@ -5053,12 +4459,13 @@ function main(domr) {
                 domc.forEach((dom) => {
                     if (domr !== undefined && dom != null && !dom === domr)
                         return;
-                    props.forEach((prop) => {
-                        tr(dom, translate, prop, obj["replace"], format, contains, append, ignoreCase, add, equals);
-                    });
-                    if (props.length === 0 && format !== undefined)
+                    if (props !== undefined && props != null)
+                        props.forEach((prop) => {
+                            tr(dom, translate, prop, obj["replace"], format, contains, append, ignoreCase, add, equals);
+                        });
+                    else if (format !== undefined)
                         tr(dom, translate, null, obj["replace"], format, contains, append, ignoreCase, add, equals);
-                    else if (props.length === 0 && obj["replace"] === undefined)
+                    else if (obj["replace"] === undefined)
                         tr(dom, translate, null, null, format, contains, append, ignoreCase, add)
                     else if (obj["replace"] !== undefined)
                         tr(dom, translate, null, obj["replace"], format, contains, append, ignoreCase, add, equals);
