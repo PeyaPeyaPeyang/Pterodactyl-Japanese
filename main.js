@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Pterodactyl Japanize
 // @namespace    https://peya.tokyo/
-// @version      0.1
-// @description  Localize to Pterodactyl!
+// @version      0.2.0
+// @description  Localize your Pterodactyl!
 // @author       Peyang TeamKun
 // @match        https://<ADDR HERE>/*
 // @grant        none
@@ -12,7 +12,10 @@ const JSON = [
     {
         "name": "General Button",
         "path": "^\/.*",
-        "selector": "button > span",
+        "selectors": [
+            "button",
+            "button > span"
+        ],
         "rules": [
             {
                 "equals": "Login",
@@ -65,17 +68,27 @@ const JSON = [
                 "translate": "キャンセル"
             },
             {
-                "euals": "Move",
+                "equals": "Continue",
+                "replace": "Continue",
+                "translate": "続行"
+            },
+            {
+                "equals": "Move",
                 "replace": "Move",
                 "translate": "移動"
             },
             {
-                "euals": "Update",
+                "equals": "Delete",
+                "replace": "Delete",
+                "translate": "削除"
+            },
+            {
+                "equals": "Update",
                 "replace": "Update",
                 "translate": "更新"
             },
             {
-                "euals": "Edit",
+                "equals": "Edit",
                 "replace": "Edit",
                 "translate": "編集"
             },
@@ -90,9 +103,6 @@ const JSON = [
                 "translate": "変更の保存"
             },
             {
-                "selectors": [
-                    "#app > div > div > section > div > div > div > div > div > div > form > div > button > span"
-                ],
                 "equals": "Save",
                 "replace": "Save",
                 "translate": "保存"
@@ -118,7 +128,7 @@ const JSON = [
             },
             {
                 "replace": "The authentication code field is required.",
-                "translate": "認証コードを入力する必要があります。"
+                "translate": "認証コードを入力してください。"
             },
             {
                 "replace": "The password provided was not valid.",
@@ -139,6 +149,10 @@ const JSON = [
             {
                 "replace": "The files.0.mode must be a number.",
                 "translate": "権限は数字である必要があります。"
+            },
+            {
+                "replace": "The public key provided is not valid.",
+                "translate": "提供された公開鍵は無効です。"
             },
         ]
     },
@@ -329,8 +343,42 @@ const JSON = [
         ]
     },
     {
-        "name": "Account",
-        "path": "^\/account$",
+        "name": "Account > Header",
+        "path": "^\/account/?.*$",
+        "rules": [
+            {
+                "selectors": [
+                    "#app > div > div > div > a"
+                ],
+                "replace": "Account",
+                "translate": "アカウント"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > div > a"
+                ],
+                "replace": "API Credentials",
+                "translate": "API 資格情報"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > div > a"
+                ],
+                "replace": "SSH Keys",
+                "translate": "SSH キー"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > div > a"
+                ],
+                "replace": "Activity",
+                "translate": "アクティビティ"
+            },
+        ]
+    },
+    {
+        "name": "Account > Account",
+        "path": "^\/account/?$",
         "rules": [
             {
                 "selectors": [
@@ -355,7 +403,7 @@ const JSON = [
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > h2"
+                    "div > div > section > div > div > div > h2"
                 ],
                 "replace": "Update Password",
                 "translate": "パスワードを更新"
@@ -461,6 +509,13 @@ const JSON = [
             },
             {
                 "selectors": [
+                    "#app > div > div > section > div > div > div > div > div > div > button"
+                ],
+                "replace": "Enable Two-Step",
+                "translate": "二段階認証を設定"
+            },
+            {
+                "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
                 "replace": "Configure Two Factor",
@@ -505,8 +560,15 @@ const JSON = [
                 "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
-                "replace": "Configure Two Factor",
-                "translate": "二段階認証を設定"
+                "replace": "Two-Step Verification",
+                "translate": "二段階認証"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > div > p"
+                ],
+                "replace": "You do not currently have two-step verification enabled on your account. Click the button below to begin configuring it.",
+                "translate": "現在、あなたのアカウントでは2段階認証が有効になっていません。以下のボタンをクリックして、設定を開始してください。"
             },
             {
                 "selectors": [
@@ -520,7 +582,7 @@ const JSON = [
                     "p.input-help"
                 ],
                 "replace": "You must provide an authentication code to continue.",
-                "translate": "続行するには、認証コードを入力する必要があります。"
+                "translate": "続行するには、認証コードを入力してください。"
             },
             {
                 "selectors": [
@@ -553,8 +615,8 @@ const JSON = [
         ]
     },
     {
-        "name": "Account > API Key",
-        "path": "^\/account/api$",
+        "name": "Account > API Credentials",
+        "path": "^\/account/api/?$",
         "rules": [
             {
                 "selectors": [
@@ -569,13 +631,6 @@ const JSON = [
                 ],
                 "replace": "Settings",
                 "translate": "設定"
-            },
-            {
-                "selectors": [
-                    "#app > div > div > div > a"
-                ],
-                "replace": "API Credentials",
-                "translate": "API"
             },
             {
                 "selectors": [
@@ -624,35 +679,35 @@ const JSON = [
                     "#app > div > div > section > div > div > div > div > form > div > p"
                 ],
                 "replace": "Leave blank to allow any IP address to use this API key, otherwise provide each IP address on a new line.",
-                "translate": "空白にした場合、全てのIPアドレスからこのAPIキーを使用できるようにします。それ以外の場合は、行ごとにIPアドレスを指定します。"
+                "translate": "空白にした場合、全てのIPアドレスからこの API キーを使用できるようにします。それ以外の場合は、行ごとにIPアドレスを指定します。"
             },
             {
                 "selectors": [
                     "#modal-portal > div > div > div > div > h3"
                 ],
                 "replace": "Your API Key",
-                "translate": "あなたのAPIキー"
+                "translate": "あなたの API キー"
             },
             {
                 "selectors": [
                     "#app > div  div > section > div > div > div > div > p"
                 ],
                 "replace": "No API keys exist for this account.",
-                "translate": "このアカウントにAPIキーは有りません。"
+                "translate": "このアカウントには API キーはありません。"
             },
             {
                 "selectors": [
                     "#modal-portal > div > div > div > div > p"
                 ],
                 "replace": "The API key you have requested is shown below. Please store this in a safe location, it will not be shown again.",
-                "translate": "リクエストしたAPIキーを以下に表示します。<strong>二度と表示されないため</strong>、必ず安全な場所に保管してください。"
+                "translate": "リクエストした API キーを以下に表示します。<strong>二度と表示されないため</strong>、必ず安全な場所に保管してください。"
             },
             {
                 "selectors": [
                     "#app > div > div > section > div > div > div > h2"
                 ],
                 "replace": "API Keys",
-                "translate": "作成したAPIキー"
+                "translate": "作成した API キー"
             },
             {
                 "selectors": [
@@ -666,7 +721,7 @@ const JSON = [
                     "#modal-portal > div > div > div > div > div"
                 ],
                 "replace": "Are you sure you wish to delete this API key? All requests using it will immediately be invalidated and will fail.",
-                "translate": "本当にこのAPIキーを削除しますか？これを使用している全てのリクエストは無効になり、失敗するようになります。"
+                "translate": "本当にこの API キーを削除しますか？これを使用している全てのリクエストは無効になり、失敗するようになります。"
             },
             {
                 "selectors": [
@@ -674,6 +729,69 @@ const JSON = [
                 ],
                 "replace": "Yes, delete key",
                 "translate": "削除する"
+            },
+        ]
+    },
+    {
+        "name": "Account > API Credentials",
+        "path": "^\/account/ssh/?$",
+        "rules": [
+            {
+                "selectors": [
+                    "title",
+                    "#app > div > div > section > div > div > div > h2"
+                ],
+                "replace": "SSH Keys",
+                "translate": "SSH キー"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > h2"
+                ],
+                "replace": "Add SSH Key",
+                "translate": "SSH キーの追加"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > form > div > label"
+                ],
+                "replace": "SSH Key Name",
+                "translate": "SSH キー名"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > form > div > label"
+                ],
+                "replace": "Public Key",
+                "translate": "公開鍵"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > form > div > p"
+                ],
+                "replace": "Enter your public SSH key.",
+                "translate": "あなたの SSH 公開鍵を入力してください。"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > form > div > p"
+                ],
+                "replace": "Name is a required field",
+                "translate": "名前を入力してください"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > form > div > p"
+                ],
+                "replace": "Publickey is a required field",
+                "translate": "公開鍵を入力してください"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > p"
+                ],
+                "replace": "No SSH Keys exist for this account.",
+                "translate": "このアカウントには SSH キーは存在しません。"
             },
         ]
     },
@@ -697,8 +815,8 @@ const JSON = [
                 "translate": "このページをレンダリングする際にエラーが発生しました。ページをリフレッシュしてみてください。"
             },
             {
-                "replace": "File Manager",
-                "translate": "ファイル管理"
+                "replace": "Files",
+                "translate": "ファイル"
             },
             {
                 "replace": "Databases",
@@ -727,6 +845,10 @@ const JSON = [
             {
                 "replace": "Settings",
                 "translate": "設定"
+            },
+            {
+                "replace": "Activity",
+                "translate": "アクティビティ"
             }
         ]
     },
@@ -736,28 +858,28 @@ const JSON = [
         "rules": [
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > button > span"
+                    "button"
                 ],
                 "replace": "Start",
                 "translate": "起動"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > button > span"
+                    "button"
                 ],
                 "replace": "Restart",
                 "translate": "再起動"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > button > span"
+                    "button"
                 ],
                 "replace": "Stop",
                 "translate": "停止"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > button > span"
+                    "button"
                 ],
                 "replace": "Kill",
                 "translate": "強制停止"
@@ -774,24 +896,89 @@ const JSON = [
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > div > div > div > p"
+                    "#app > div > div > section > div > div > div > div > h3",
+                    "#app > div > div > section div > div > p"
                 ],
-                "replace": "Memory usage",
-                "translate": "メモリ使用率"
+                "replace": "Memory",
+                "translate": "メモリ使用量"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > div > div > div > p"
+                    "#app > div > div > section > div > div > div > div > h3",
+                    "#app > div > div > section div > div > p"
                 ],
-                "replace": "CPU usage",
+                "replace": "CPU Load",
                 "translate": "CPU使用率"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > div > div > div > p"
+                    "#app > div > div > section > div > div > div > div > h3"
                 ],
-                "replace": "Server is offline.",
-                "translate": "サーバはオフラインです。"
+                "replace": "Network",
+                "translate": "ネットワーク使用量"
+            },
+            {
+                "selectors": [
+                    "div > div > div > div > div > div > div > div > div > div > h2"
+                ],
+                "replace": "Forcibly Stop Process",
+                "translate": "プロセスの強制停止"
+            },
+            {
+                "selectors": [
+                    "div > div > div > div > div > div > div > div > div > div > p"
+                ],
+                "replace": "Forcibly stopping a server can lead to data corruption.",
+                "translate": "サーバを強制的に停止させると、データの破損が発生する可能性があります。"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section div > div > p"
+                ],
+                "replace": "Address",
+                "translate": "アドレス"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section div > div > p"
+                ],
+                "replace": "Uptime",
+                "translate": "起動時間"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section div > div > p"
+                ],
+                "replace": "Address",
+                "translate": "アドレス"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section div > div > p"
+                ],
+                "replace": "Disk",
+                "translate": "ディスク使用量"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > div > h3"
+                ],
+                "replace": "Network",
+                "translate": "ネットワーク使用量"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section div > div > p"
+                ],
+                "replace": "Network (Inbound)",
+                "translate": "ネットワーク (インバウンド)"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section div > div > p"
+                ],
+                "replace": "Network (Outbound)",
+                "translate": "ネットワーク (アウトバウンド)"
             },
         ]
     },
@@ -808,36 +995,43 @@ const JSON = [
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > button > span",
-                    "#modal-portal > div > div > div > div > form > div > button > span"
+                    "#app > div > div > section > div > div > div > button",
+                    "div > div > div > div > h2"
                 ],
                 "replace": "Create Directory",
                 "translate": "ディレクトリを作成"
             },
             {
                 "selectors": [
-                    "#modal-portal > div > div > div > div > form > label"
+                    "div > div > div > div > div > form > div > label"
                 ],
-                "replace": "Directory Name",
+                "replace": "Name",
                 "translate": "ディレクトリ名"
+            },
+            {
+                "selectors": [
+                    "div > div > form > p > span"
+                ],
+                "replace": "This directory will be created as",
+                "translate": "このディレクトリは次の場所に作成されます"
             },
             {
                 "selectors": [
                     "p.input-help"
                 ],
                 "replace": "A valid directory name must be provided.",
-                "translate": "正しいディレクトリ名を入力する必要があります。"
+                "translate": "正しいディレクトリ名を入力してください。"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > button > span"
+                    "#app > div > div > section > div > div > div > button"
                 ],
                 "replace": "Upload",
                 "translate": "アップロード"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > a > button > span"
+                    "#app > div > div > section > div > div > div > a > button"
                 ],
                 "replace": "New File",
                 "translate": "新しいファイル"
@@ -910,66 +1104,38 @@ const JSON = [
             },
             {
                 "selectors": [
-                    "#modal-portal > div > div > div > div > h2"
+                    "div > div > div > div > div > div > div > div > div > div > h2"
                 ],
-                "replace": "Delete these files?",
-                "translate": "本当にこのファイルを削除しますか？"
+                "replace": "Delete File",
+                "translate": "ファイル削除"
             },
             {
                 "selectors": [
-                    "#modal-portal > div > div > div > div > h2"
+                    "div > div > div > div > div > div > div > div"
                 ],
-                "replace": "Delete this file?",
-                "translate": "本当にこのファイルを削除しますか？"
+                "replace": "You will not be able to recover the contents of",
+                "translate": "一度削除した "
             },
             {
                 "selectors": [
-                    "#modal-portal > div > div > div > div > h2"
+                    "div > div > div > div > div > div > div > div"
                 ],
-                "replace": "Delete this File?",
-                "translate": "本当にこのファイルを削除しますか？"
+                "replace": " once deleted.",
+                "translate": " の内容を復元することはできません。"
             },
             {
                 "selectors": [
-                    "#modal-portal > div > div > div > div > h2"
+                    "#app > div > div > section > div > p"
                 ],
-                "replace": "Delete this Directory?",
-                "translate": "本当にこのディレクトリを削除しますか？"
+                "replace": "This directory seems to be empty.",
+                "translate": "このディレクトリは空っぽのようです。"
             },
             {
                 "selectors": [
-                    "#modal-portal > div > div > div > div > h2"
+                    "div > div > div > div > p"
                 ],
-                "replace": "Delete theese Directories?",
-                "translate": "本当にこのディレクトリを削除しますか？"
-            },
-            {
-                "selectors": [
-                    "#modal-portal > div > div > div > div > div"
-                ],
-                "replace": "Deleting files is a permanent operation, you cannot undo this action.",
-                "translate": "ファイルの削除は永続的な操作であり、この操作を元に戻すことはできません。"
-            },
-            {
-                "selectors": [
-                    "#modal-portal > div > div > div > div > div > button > span"
-                ],
-                "replace": "Yes, Delete Files",
-                "translate": "削除する"
-            },
-            {
-                "selectors": [
-                    "#modal-portal > div > div > div > div > div > button > span"
-                ],
-                "replace": "Yes, Delete File",
-                "translate": "削除する"
-            },
-            {
-                "selectors": [
-                    "#modal-portal > div > div > div > div > div > button > span"
-                ],
-                "replace": "Yes, Delete Directory",
-                "translate": "削除する"
+                "replace": "Drag and drop files to upload.",
+                "translate": "ドラッグ＆ドロップしてアップロード"
             },
             {
                 "selectors": [
@@ -1058,6 +1224,14 @@ const JSON = [
                 ],
                 "replace": "ago",
                 "translate": "前"
+            },
+            {
+                "selectors": [
+                    "#app > div > div > section > div > div > div > a > div",
+                    "#app > div > div > section > div > div > div > div > div"
+                ],
+                "replace": "in less than a minute",
+                "translate": "たった今"
             },
             {
                 "selectors": [
@@ -1208,14 +1382,6 @@ const JSON = [
                     "#app > div > div > section > div > div > div > a > div",
                     "#app > div > div > section > div > div > div > div > div"
                 ],
-                "replace": "in less than a minute",
-                "translate": "たった今"
-            },
-            {
-                "selectors": [
-                    "#app > div > div > section > div > div > div > a > div",
-                    "#app > div > div > section > div > div > div > div > div"
-                ],
                 "replace": "th, ",
                 "translate": "日"
             },
@@ -1357,8 +1523,8 @@ const JSON = [
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > button > span",
-                    "#modal-portal > div > div > div > div > form > div > button > span"
+                    "#app > div > div > section > div > div > button",
+                    "#modal-portal > div > div > div > div > form > div > button"
                 ],
                 "replace": "Create schedule",
                 "translate": "スケジュールを作成"
@@ -1379,9 +1545,9 @@ const JSON = [
             },
             {
                 "selectors": [
-                    "#modal-portal > div > div > div > div > form > div > p.input-help"
+                    "p.input-help"
                 ],
-                "replace": "A human readable identifer for this schedule",
+                "replace": "A human readable identifier for this schedule.",
                 "translate": "人間が理解できるようなスケジュールの名前"
             },
             {
@@ -1400,28 +1566,147 @@ const JSON = [
                     "#app > div > div > section > div > div > div > p"
                 ],
                 "replace": "Hour",
-                "translate": "時間"
+                "translate": "時"
             },
             {
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div"
                 ],
                 "replace": "Day of month",
-                "translate": "一ヶ月に"
+                "translate": "日"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div"
+                ],
+                "replace": "Month",
+                "translate": "月"
             },
             {
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > div > div"
                 ],
                 "replace": "Day of week",
-                "translate": "一週間に"
+                "translate": "曜日"
             },
             {
                 "selectors": [
                     "#modal-portal > div > div > div > div > form > p"
                 ],
                 "replace": "The schedule system supports the use of Cronjob syntax when defining when tasks should begin running. Use the fields above to specify when these tasks should begin running.",
-                "translate": "スケジュールシステムは、タスクの実行を開始するタイミングを定義するときに、Cronjob構文の使用をサポートします。上記のフィールドを使用して、これらのタスクの実行を開始するタイミングを指定します。"
+                "translate": "スケジュールシステムは、タスクの実行を開始するタイミングを定義するときに、Cronjob構文をサポートします。上のフィールドを使用して、これらのタスクの実行を開始するタイミングを指定します。"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > label"
+                ],
+                "replace": "Show Cheatsheet",
+                "translate": "チートシートを表示する"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > p"
+                ],
+                "replace": "Show the cron cheatsheet for some examples.",
+                "translate": "cron チートシートといくつかの設定例を表示します。"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > h2"
+                ],
+                "replace": "Examples",
+                "translate": "設定例"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "every 5 minutes",
+                "translate": "5 分ごと"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "every hour",
+                "translate": "1 時間ごと"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "hour range",
+                "translate": "範囲指定(時間)"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "once a day",
+                "translate": "一日に一回"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "every Monday",
+                "translate": "毎週月曜日に一回"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "every 5 minutes",
+                "translate": "5 分ごと"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > h2"
+                ],
+                "replace": "Special Characters",
+                "translate": "制御文字"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "any value",
+                "translate": "任意の値"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "value list separator",
+                "translate": "値リストセパレータ"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "range values",
+                "translate": "値の範囲"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "step values",
+                "translate": "ステップ値"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > div > div"
+                ],
+                "replace": "every 5 minutes",
+                "translate": "5 分ごと"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > p"
+                ],
+                "replace": "Only execute this schedule when the server is in a running state.",
+                "translate": "サーバが実行中のときにのみ、このスケジュールを実行します。"
             },
             {
                 "selectors": [
@@ -1745,10 +2030,10 @@ const JSON = [
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > button > span"
+                    "#app > div > div > section > div > div > button"
                 ],
                 "replace": "New User",
-                "translate": "ユーザを追加"
+                "translate": "新しいユーザ"
             },
             {
                 "selectors": [
@@ -2339,6 +2624,27 @@ const JSON = [
                 "replace": "Allows a user to trigger a reinstall of this server.",
                 "translate": "ユーザがこのサーバの再インストールを行えるようにします。"
             },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > div > p"
+                ],
+                "replace": "activity",
+                "translate": "アクティビティ",
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > p"
+                ],
+                "replace": "Permissions that control a user's access to the server activity logs.",
+                "translate": "サーバのアクティビティログへのアクセスを制御する権限です。"
+            },
+            {
+                "selectors": [
+                    "#modal-portal > div > div > div > div > form > div > div > div > label > div > p"
+                ],
+                "replace": "Allows a user to view the activity logs for the server.",
+                "translate": "サーバーのアクティビティログを表示できるようにします。"
+            },
         ]
     },
     {
@@ -2391,41 +2697,32 @@ const JSON = [
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > span"
+                    "#app > div > div > section > div > div > div > button"
                 ],
+                "equals": "Primary",
                 "replace": "Primary",
                 "translate": "主要"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > div > button > span"
+                    "#app > div > div > section > div > div > div > button"
                 ],
                 "replace": "Make Primary",
                 "translate": "主要にする"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > p"
+                    "div > div > div > div > div > div > div > div > div > div > h2"
                 ],
-                "contains": [
-                    "You are currently using "
-                ],
-                "replace": "of",
-                "translate": "つのネットワークを使用しており、このサーバでは"
+                "replace": "Remove Allocation",
+                "translate": "割当の削除"
             },
             {
                 "selectors": [
-                    "#app > div > div > section > div > div > p"
+                    "div > div > div > div > div > div > div > div > div > div"
                 ],
-                "replace": "You are currently using ",
-                "translate": "現在、"
-            },
-            {
-                "selectors": [
-                    "#app > div > div > section > div > div > p"
-                ],
-                "replace": " allowed allocations for this server.",
-                "translate": "つがこのサーバでは利用可能です。"
+                "replace": "This allocation will be immediately removed from your server.",
+                "translate": "この割り当ては、サーバーからすぐに削除されます。"
             },
         ]
     },
@@ -4485,7 +4782,7 @@ let config = {
     characterData: false
 };
 
-let observer = new MutationObserver((r) => {
+let observer = new MutationObserver(() => {
     /*let flag = false;
     r.forEach((b) => {
         if (b.target)
@@ -4534,7 +4831,6 @@ function cca (str, array, ignoreCase) {
 }
 
 function equ (str, equ) {
-    let a = false;
     if (equ === undefined || equ == null)
         return true;
     return str.toUpperCase() === equ.toUpperCase();
